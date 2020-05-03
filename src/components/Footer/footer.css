@@ -1,0 +1,90 @@
+.footer {
+  padding: 100px 0;
+}
+
+.footer__about h2 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__about li {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #82899b;
+  margin-bottom: 10px;
+}
+
+.footer__about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__contact h2 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f2431;
+}
+
+.footer__contact p {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #82899b;
+}
+
+.footer__contact ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.footer__contact li {
+  margin-right: 10px;
+}
+
+.footer__news_letter p {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #82899b;
+}
+
+.footer__news_letter h2 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f2431;
+}
+
+.footer__subscription {
+  display: flex;
+  height: 39px;
+  width: 218px;
+  padding: 0;
+}
+
+.landing_page__copyright p {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #82899b;
+  margin-top: 72px;
+}

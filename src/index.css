@@ -1,0 +1,211 @@
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.top_home {
+  height: 400px;
+}
+
+.left {
+  background-color: #cc0;
+}
+
+.right {
+  background-color: aqua;
+}
+
+.nav-link {
+  color: #1f2431;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  color: #1f2431;
+}
+
+li > a {
+  color: #1f2431;
+}
+
+.footer {
+  background-color: #fff;
+  bottom: 0;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+/* REGISTRATION CSS */
+
+.login-card {
+  padding-top: 3%;
+  width: 100%;
+  height: 500px;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.reg-header {
+  background-color: #30c1b0;
+  height: 42px;
+  border-radius: 10px;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.reg-form {
+  border: 1px solid transparent;
+  padding-top: 3%;
+}
+
+.form-control-login {
+  display: block;
+  width: 100%;
+  height: 45.5px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #7b7f9eb5;
+  background-color: #38c8e820;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+}
+
+.reg-submit {
+  height: 42px;
+  width: 50%;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #38c8e8;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.submit-reg-div {
+  text-align: center;
+}
+
+.submit-reg-div > a {
+  color: #1f2431;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 810px) {
+  .mobile {
+    display: none;
+  }
+}
+
+/* MOBILE RESPONSIVENES */
+
+@media screen and (max-width: 760px) {
+  .footer {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  /* HOMEPAGE */
+  .splashscreen {
+    height: 100vh;
+    width: 100%;
+    padding-top: 30%;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .splash-words {
+    text-align: left;
+    padding-left: 10%;
+    margin-bottom: 20%;
+    margin-top: 15%;
+  }
+
+  .reg-submit {
+    width: 80%;
+  }
+
+  body {
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    height: 100vh;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: #000;
+  }
+
+  /* REGISTRATION */
+
+  .login-card {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .reg-header {
+    background-color: #2ad2be;
+    height: 42px;
+    border-radius: 0;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 5%;
+    padding-left: 20px;
+  }
+
+  .mobile-logo {
+    display: block;
+    margin: auto;
+  }
+}

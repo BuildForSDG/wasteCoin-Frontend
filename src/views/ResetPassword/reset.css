@@ -1,0 +1,68 @@
+.sign_in h5 {
+  background: #30c1b0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 154.3%;
+  color: #fff;
+}
+
+.login_btn {
+  height: 42px;
+  background: #38c8e8;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.verify-header {
+  font-size: 2rem;
+  color: #7b7f9e;
+  font-weight: 450;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.btn_width {
+  padding: 0 20%;
+}
+
+@media screen and (max-width: 540px) {
+  .btn_width {
+    padding: 0;
+  }
+
+  .verify-header {
+    font-size: 1rem;
+  }
+}
+
+.login_btn:hover {
+  background: #38c8e8;
+  border-color: transparent;
+}
+
+.sign_in__info a {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 154.3%;
+  text-decoration-line: underline;
+  color: #111;
+}
+
+.input_field input {
+  background: rgba(56, 200, 232, 0.2);
+}
+
+.signin__title_bar {
+  width: 55rem;
+  height: 42px;
+  left: 184px;
+  top: 147px;
+  color: #fff;
+  background: #30c1b0;
+  border-radius: 10px;
+  padding: 10px 0;
+}

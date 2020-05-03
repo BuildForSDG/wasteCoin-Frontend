@@ -1,0 +1,296 @@
+.landing_page__welcome {
+  height: 500px;
+  display: flex;
+}
+
+.landing_page__info {
+  margin-top: 40px;
+}
+
+.landing_page__create_account {
+  padding: 100px 50px 0 50px;
+}
+
+.landing_page__create_account__mobile {
+  padding: 50px 50px 0 50px;
+}
+
+.landing_page__create_account__mobile a > button {
+  background: #38c8e8;
+  border-radius: 10px;
+  width: 300px;
+  height: 42px;
+  margin-top: 78px;
+  border-color: transparent;
+}
+
+.landing_page__reason__btn a {
+  width: 300px;
+  height: 40px;
+  background: linear-gradient(81.58deg, rgba(42, 210, 190, 0.74) 16.09%, rgba(56, 200, 232, 0.71) 95.47%);
+  border-radius: 81.5px;
+}
+
+.landing_page__create_account__mobile button > a {
+  color: #fff;
+}
+
+.landing_page__create_account__mobile p > a {
+  color: #1b1d28;
+}
+
+.landing_page__create_account a:hover {
+  text-decoration: none;
+}
+
+.landing_page__create_account__mobile p {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 154.3%;
+  text-align: center;
+  color: #1d1d28 important;
+  text-decoration: none;
+}
+
+.landing_page__create_account h3,
+h1 {
+  margin: 0;
+}
+
+.landing_page__create_account h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  color: #1f2431;
+}
+
+.landing_page__create_account h3 {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 164.57%;
+}
+
+.landing_page__waste {
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 540px) {
+  .landing_page__create_account h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 154.3%;
+    color: #7b7f9e;
+  }
+
+  .landing_page__create_account__mobile p:nth-child(1) {
+    text-align: left;
+  }
+
+  .landing_page__create_account h1 {
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+.landing_page__create_account__btn {
+  width: 215px;
+  height: 40px;
+  border-radius: 81.5px;
+  margin-top: 36px;
+  background: linear-gradient(83.94deg, rgba(42, 210, 190, 0.74) 16.09%, rgba(56, 200, 232, 0.71) 95.47%);
+}
+
+.landing_page__info__first_subsection div,
+.landing_page__info__second_subsection div {
+  margin-bottom: 10px;
+  align-items: center;
+  margin-left: 0;
+}
+
+.landing_page__info__about {
+  background: rgba(42, 210, 190, 0.2);
+  border-radius: 6px;
+  padding: 30px;
+}
+
+.landing_page__info__about p {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  color: #82899b;
+}
+
+.landing_page__info__about h1 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #08809a;
+}
+
+.landing_page__info__waste_coin_info {
+  background: rgba(56, 200, 232, 0.2);
+  border-radius: 6px;
+  padding: 25px;
+  position: relative;
+}
+
+.landing_page__info__waste_coin_info h1 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #08809a;
+}
+
+.landing_page__info__waste_coin_info p {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  color: #82899b;
+  width: 300px;
+}
+
+.landing_page__info__waste_coin_info img {
+  width: 100%;
+}
+
+.landing_page__img {
+  align-items: center;
+}
+
+.landing_page__info__get_waste_coin_info {
+  background: rgba(42, 210, 190, 0.2);
+  border-radius: 6px;
+  padding: 30px;
+}
+
+.landing_page__reason__btn {
+  padding: 0 20%;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.landing_page__info__get_waste_coin_info img {
+  margin-right: 10px;
+}
+
+.landing_page__info__get_waste_coin_info h1 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #08809a;
+}
+
+.landing_page__info__how_it_works {
+  height: 505px;
+  background: rgba(42, 210, 190, 0.2);
+  border-radius: 6px;
+  padding: 35px;
+}
+
+.landing_page__info__how_it_works h1 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #08809a;
+  text-align: right;
+  width: 100%;
+}
+
+.landing_page__info__how_it_works img {
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.landing_page__info__keys_to_know {
+  height: 440px;
+  background: rgba(56, 200, 232, 0.2);
+  border-radius: 6px;
+  padding: 29px;
+}
+
+.landing_page__info__keys_to_know h1 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #08809a;
+  text-align: right;
+  width: 100%;
+}
+
+.landing_page__info__partners {
+  height: 552px;
+  background: rgba(42, 210, 190, 0.2);
+  border-radius: 6px;
+  padding: 25px;
+}
+
+.landing_page__info__partners h1 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #08809a;
+  text-align: right;
+  width: 100%;
+}
+
+.landing_page__info__partners p {
+  width: 415px;
+  height: 96px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  color: #82899b;
+}
+
+.landing_page__reason {
+  display: flex;
+  align-items: center;
+}
+
+.landing_page__reason p {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 29px;
+  color: #82899b;
+  margin: 0;
+}
+
+.landing_page__bullet {
+  width: 40px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0;
+  background: linear-gradient(324.53deg, #315efb -27.5%, rgba(49, 94, 251, 0) 108.52%);
+}
+
+.partners_logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
