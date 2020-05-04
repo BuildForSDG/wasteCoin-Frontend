@@ -1,0 +1,37 @@
+.header_layout {
+  margin-bottom: 50px;
+}
+
+.header_layout__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header_layout__links ul {
+  display: flex;
+  list-style-type: none;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header_layout__links li {
+  padding: 0 10px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.header_layout__apple_store_link {
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 1080px) {
+  .header_layout__google_play_link,
+  .header_layout__apple_store_link {
+    display: none;
+  }
+}
