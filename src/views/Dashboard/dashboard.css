@@ -1,0 +1,53 @@
+.dashboard-body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.dashboard-inner {
+  width: 100%;
+  margin-left: 270px;
+  background-color: #e5e5e505;
+  height: calc(100% - 80px);
+}
+
+/* MOBILE RESPONSIVENES */
+
+@media screen and (max-width: 760px) {
+  .dashboard-header {
+    display: block;
+    background-color: #2ad2be;
+    height: 42px;
+    border-radius: 0;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+
+  /* DASHBOARD  */
+  .appheader {
+    display: none;
+  }
+
+  .userfooter {
+    display: none;
+  }
+
+  /* MOBILE MENU */
+  .dashboard-inner {
+    width: 100%;
+    background-color: #e5e5e505;
+    height: calc(100vh - 160px);
+    margin-left: 0;
+  }
+
+  .dashboard-body {
+    padding: 2%;
+  }
+}
