@@ -114,6 +114,14 @@ li > a {
   display: none;
 }
 
+.sidenav-ul-mobile {
+  display: none;
+}
+
+.dashboard-header {
+  display: none;
+}
+
 @media screen and (max-width: 810px) {
   .mobile {
     display: none;
@@ -184,7 +192,6 @@ li > a {
   }
 
   /* REGISTRATION */
-
   .login-card {
     background-color: #fff;
     width: 100%;
@@ -204,8 +211,28 @@ li > a {
     padding-left: 20px;
   }
 
+  .dashboard-header {
+    display: block;
+    background-color: #2ad2be;
+    height: 42px;
+    border-radius: 0;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+
   .mobile-logo {
     display: block;
     margin: auto;
+  }
+
+  /* DASHBOARD  */
+  .appheader {
+    display: none;
+  }
+
+  .userfooter {
+    display: none;
   }
 }

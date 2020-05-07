@@ -1,0 +1,10 @@
+.userfooter {
+  text-align: center;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #82899b;
+  justify-content: center;
+  z-index: 200;
+}

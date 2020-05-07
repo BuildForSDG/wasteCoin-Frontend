@@ -7,21 +7,49 @@ import SignIn from "./views/SignIn";
 import SignUp from "./views/SignUp";
 import VerificationPage from "./views/Verification";
 import ResetpasswordPage from "./views/ResetPassword";
+import AppLayout from "./components/Layout/AppLayout";
+import Dashboard from "./views/Dashboard";
 import "./index.css";
 
 const routing = () => (
   <Router>
-    <AuthLayout>
-      <main>
-        <Switch>
-          <Route path="/" component={App} exact />
-          <Route path="/login" component={SignIn} />
-          <Route path="/registration" component={SignUp} />
-          <Route path="/verification" component={VerificationPage} />
-          <Route path="/resetpassword" component={ResetpasswordPage} />
-        </Switch>
-      </main>
-    </AuthLayout>
+      <Switch>
+        <Route exact path="/" render={(props) =>
+          <AuthLayout>
+            <App {...props} />
+          </AuthLayout>
+        } />
+        
+        <Route path="/login" render={(props) =>
+          <AuthLayout>
+            <SignIn {...props} />
+          </AuthLayout>
+        } />
+
+        <Route path="/registration" render={(props) =>
+          <AuthLayout>
+            <SignUp {...props} />
+          </AuthLayout>
+        } />
+
+        <Route path="/verification" render={(props) =>
+          <AuthLayout>
+            <VerificationPage {...props} />
+          </AuthLayout>
+        } />
+
+        <Route path="/resetpassword" render={(props) =>
+          <AuthLayout>
+            <ResetpasswordPage {...props} />
+          </AuthLayout>
+        } />
+
+        <Route path="/dashboard" render={(props) =>
+          <AppLayout>
+            <Dashboard {...props} />
+          </AppLayout>
+        } />
+      </Switch>
   </Router>
 );
 

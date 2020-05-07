@@ -19,7 +19,7 @@ function SignIn() {
                 <div className="form-group">
                     <input type="password" placeholder="Password" className="form-control-login mt-3" />
                 </div>
-                <button className="btn btn-block btn-primary mt-5 login_btn">Login</button>
+                <Link to="/dashboard"><button className="btn btn-block btn-primary mt-5 login_btn">Login</button></Link>
                 <div className="d-flex justify-content-between mt-3 sign_in__info">
                     <a href="##"><Link to="/registration">Create Account</Link></a>
                     <Link to="/resetpassword"><a href="##">Forget passowrd?</a></Link>
