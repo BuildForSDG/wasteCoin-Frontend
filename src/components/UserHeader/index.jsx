@@ -8,7 +8,7 @@ function UserHeader() {
     return(
         <div>
             <nav className="navbar navbar-expand-lg appheader">
-            <a className="navbar-brand" href="##"><Link to ="/"><img src={wasteLogo} className="logo" alt="logo" /></Link></a>  
+            <Link to ="/" className="navbar-brand"><img src={wasteLogo} className="logo" alt="logo" /></Link>  
             </nav>
             <div className="dashboard-header text-center">Dashboard</div>
         </div>

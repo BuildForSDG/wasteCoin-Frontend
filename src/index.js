@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import { Provider } from "react-redux";
 import configureStore from "./redux/store";
+import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import App from "./route";
 

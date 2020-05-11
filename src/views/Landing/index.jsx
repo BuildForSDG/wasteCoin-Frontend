@@ -19,7 +19,7 @@ const Landing = () => (
         <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
         <h1>Hey there!</h1>
         <h3>Get rewards for disposing waste <br /> Properly</h3>
-        <Link to="/registration"><a href="##" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</a></Link>
+        <Link to="/registration" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</Link>
       </div>
       <div className="d-none col-xlg-7 d-xl-block landing_page__waste">
         <img src={wasteCoinWallet} alt="waste_coin_wallet_img" />
