@@ -19,19 +19,19 @@ function UserSidebar() {
     <nav className="sidenav">
       <ul className="navbar-nav mr-auto sidenav-ul">
         <li className="nav-item sidenav-li">
-          <Link to="/dashboard"><a className="nav-link" href="#how_it_works"><img src={home} className="logo" alt="Home-logo" /><span className="sidenav-span">&nbsp;Home</span></a></Link>
+          <Link to="/dashboard" className="nav-link" href="#how_it_works"><img src={home} className="logo" alt="Home-logo" /><span className="sidenav-span">&nbsp;Home</span></Link>
         </li>
         <li className="nav-item sidenav-li">
-          <Link to="/registration"><a className="nav-link" href="##"><img src={profile} className="logo" alt="Profile-logo" /> <span className="sidenav-span">Profile</span></a></Link>
+          <Link to="/registration" className="nav-link"><img src={profile} className="logo" alt="Profile-logo" /> <span className="sidenav-span">Profile</span></Link>
         </li>
         <li className="nav-item sidenav-li">
-          <Link to="/login"><a className="nav-link " href="##"><img src={wallet} className="logo" alt="Wallet-logo" /><span className="sidenav-span">&nbsp;Wallet</span></a></Link>
+          <Link to="/login" className="nav-link"><img src={wallet} className="logo" alt="Wallet-logo" /><span className="sidenav-span">&nbsp;Wallet</span></Link>
         </li>
         <li className="nav-item sidenav-li">
-          <Link to="/registration"><a className="nav-link" href="##"><img src={notification} className="logo" alt="Notification-logo" /> <span className="sidenav-span">Notification</span></a></Link>
+          <Link to="/registration" className="nav-link"><img src={notification} className="logo" alt="Notification-logo" /> <span className="sidenav-span">Notification</span></Link>
         </li>
         <li className="nav-item sidenav-li">
-          <Link to="/"><a className="nav-link " href="##"><img src={logout} className="logo" alt="Logout-logo" /><span className="sidenav-span">&nbsp;Logout</span></a></Link>
+          <Link to="/" className="nav-link"><img src={logout} className="logo" alt="Logout-logo" /><span className="sidenav-span">&nbsp;Logout</span></Link>
         </li>
       </ul>
       <div className="sidenav-ul-mobile">

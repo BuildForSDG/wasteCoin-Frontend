@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
 
-import sample from "./reducers/sample";
+import newUser from "./reducers/signUp";
 
 
 
 export default combineReducers({
-  sample
+  newUser,
 });
