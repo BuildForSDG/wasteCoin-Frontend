@@ -10,9 +10,19 @@
 
 .login_btn {
   height: 42px;
-  background: #38c8e8;
+  width: 100%;
   border-radius: 10px;
-  border-color: transparent;
+  margin: 0 auto;
+  background-color: #38c8e8;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_btn > div {
+  margin-right: 10px;
 }
 
 .btn_width {
@@ -23,11 +33,6 @@
   .btn_width {
     padding: 0;
   }
-}
-
-.login_btn:hover {
-  background: #38c8e8;
-  border-color: transparent;
 }
 
 .sign_in__info a {
