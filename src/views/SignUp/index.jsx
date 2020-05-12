@@ -1,21 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
-import {ToastContainer} from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+import { ToastContainer } from "react-toastify";
 
 import wasteLogo from "../../images/waste_coin_logo.svg";
 import backButton from "../../images/Chevron.svg";
 import { Link } from "react-router-dom";
 import "./signUp.css";
 import { addNewUser } from "../../redux/reducers/signUp";
+import Spinner from "../../components/Loader";
 
 function RegistrationPage(props) {
   const dispatch = useDispatch();
+  const [isLoadingSpinner, setLoader] = useState(false);
   const { handleSubmit, register, errors, getValues } = useForm();
-
+  
+  const isLoadingState = useSelector((state) => state.newUser.isLoading);
+  
+  useEffect(() => {
+    setLoader(isLoadingState);
+  },[isLoadingState]);
 
   const onSubmit = (data) => {
-
     const newUserDetails = {
       firstname: data.firstname,
       lastname: data.lastname,
@@ -33,7 +39,7 @@ function RegistrationPage(props) {
   };
 
   const renderErrorText = (message) => {
-    return(
+    return (
       message && <span className="error"> {message.message}</span>
     );
   };
@@ -53,7 +59,7 @@ function RegistrationPage(props) {
                 placeholder="First Name"
                 ref={register({
                   required: true,
-                  validate: (value) => value.length >2 || "Please you must enter a name greater than  2 letters!"
+                  validate: (value) => value.length > 2 || "Please you must enter a name greater than  2 letters!"
                 })}
               />
               {renderErrorText(errors.firstname)}
@@ -68,7 +74,7 @@ function RegistrationPage(props) {
                 name="lastname"
                 ref={register({
                   required: true,
-                  validate: (value) => value.length >2 || "Please you must enter a name more than  2 letters!"
+                  validate: (value) => value.length > 2 || "Please you must enter a name more than  2 letters!"
                 })}
               />
               {renderErrorText(errors.lastname)}
@@ -82,7 +88,7 @@ function RegistrationPage(props) {
                 name="phonenumber"
                 ref={register({
                   required: true,
-                  validate: (value) => value.length >2 || "Please you must enter a name more than  2 digits!"
+                  validate: (value) => value.length > 2 || "Please you must enter a name more than  2 digits!"
                 })}
               />
               {renderErrorText(errors.phonenumber)}
@@ -91,7 +97,7 @@ function RegistrationPage(props) {
             <div className="form-group text-left">
               <select type="phone"
                 className="form-control-login"
-                id="phone"
+                id="gender"
                 placeholder="Gender"
                 name="gender"
                 ref={register({
@@ -99,10 +105,10 @@ function RegistrationPage(props) {
                   validate: (value) => value !== "Gender" || "Please you must choose either male or female!"
 
                 })}
-              > 
-              <option>Gender</option>
-              <option>Male</option>
-              <option>Female</option>
+              >
+                <option>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
               </select>
               {renderErrorText(errors.gender)}
             </div>
@@ -213,7 +219,10 @@ function RegistrationPage(props) {
 
         </div>
         <div className="col-md-12 submit-reg-div">
-          <button type="submit" className="reg-submit" >Create Account</button>
+          <button type="submit" className="reg-submit" >
+            <Spinner visible={isLoadingSpinner} />
+            Create Account
+            </button>
           <Link to="/login"><p>Have an account already? Sign in </p></Link>
         </div>
       </form>

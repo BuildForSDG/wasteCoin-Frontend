@@ -96,6 +96,13 @@ li > a {
   background-color: #38c8e8;
   border: 1px solid transparent;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reg-submit > div {
+  margin-right: 10px;
 }
 
 .submit-reg-div {
