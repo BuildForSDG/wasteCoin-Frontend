@@ -36,46 +36,46 @@ Waste Collection could be community base as community leaders could be rallied a
  if an average Nigerian is made aware of the value of these NBW and would be incentivized. The consciousness would drive good and acceptable waste disposal habit. This can be achieved via this wastecoin project as it would consentiously help to reduce and recycle non-biodegradable waste in accordance to the Sustainable Development Goal no 11, help keep our cities safe and clean and also reward good waste disposal habit.
 
 ## USER JOURNEY
-1.   Malik downloaded the WasteCoin app
+1.    Malik downloaded the WasteCoin app
 
-2.   So, in his spare time, he collects these NBWs and store them OR
+2.    So, in his spare time, he collects these NBWs and store them OR
 
-3.   He was in charge of office cleaning and he discovered that the office or the premises was used for some party with lots of PET bottles on the round. He picks them and store them somewhere safe OR
+3.    He was in charge of office cleaning and he discovered that the office or the premises was used for some party with lots of PET bottles on the round. He picks them and store them somewhere safe OR
 
-4.   He decided to collect these NWBs at home, from his neighbors and environment.
+4.    He decided to collect these NWBs at home, from his neighbors and environment.
 
-5.   While on his way to work, he walked into our collection center
+5.    While on his way to work, he walked into our collection center
 
-6.   weighted the waste and dropped it for collection and waited to be credited
+6.    weighted the waste and dropped it for collection and waited to be credited
 
-7.   As measured, the equivalent amount of token would be transferred to Malik's account.
+7.    As measured, the equivalent amount of token would be transferred to Malik's account.
 
-8.   When it is sufficient for exchange, Malik could exchange it for cash or any other palliatives.
+8.    When it is sufficient for exchange, Malik could exchange it for cash or any other palliatives.
 
 So, let’s say Malik was able to gather and save up to 10,000WC after one month, it could be converted to let’s say N1000 or request for a recharge card worth N1000. 
 
 ## UNIQUENESS
-1.   The business model is not limited to any locality in terms of reach to market share reach as anyone with the app can go at his/her convenience to drop NWB and get credited depending on the arrangement agreed upon.
+1.    The business model is not limited to any locality in terms of reach to market share reach as anyone with the app can go at his/her convenience to drop NWB and get credited depending on the arrangement agreed upon.
 
-2.   Gives everyone the opportunity to make conscious and unconscious effort towards saving and protecting the environment
+2.    Gives everyone the opportunity to make conscious and unconscious effort towards saving and protecting the environment
 
-3.   It is flexible and can be modified to suit any state waste need in Nigeria 
+3.    It is flexible and can be modified to suit any state waste need in Nigeria 
 
-4.   Solid arrangements would have been made with Client companies who needs NBW to collect them at the designated waste centers
+4.    Solid arrangements would have been made with Client companies who needs NBW to collect them at the designated waste centers
 
 ## ADVANTAGES/STRENGTH 
-1.   Develop a community of waste conscious society
+1.    Develop a community of waste conscious society
 
-2.   Reduce waste drastically especially plastic, carton and e-waste 
+2.    Reduce waste drastically especially plastic, carton and e-waste 
 
-3.   There is reward for compliance as every plastic user is rewarded for their plastic accountability as against a few who does not.
+3.    There is reward for compliance as every plastic user is rewarded for their plastic accountability as against a few who does not.
 
-4.   There would be a ready feedstock for companies that used NBW for production of other products
+4.    There would be a ready feedstock for companies that used NBW for production of other products
 
 ## CHALLENGES/WEAKNESS 
-1.   How to help Nigerians see the bigger picture of saving the environment that what they more likely get from the project.
+1.    How to help Nigerians see the bigger picture of saving the environment that what they more likely get from the project.
 
-2.   How to fashion out an acceptable yet profitable reward system in terms of valuation for token.
+2.    How to fashion out an acceptable yet profitable reward system in terms of valuation for token.
 
 ## BUSINESS MODEL FLOWCHART
 ![image](https://user-images.githubusercontent.com/26861798/81468257-4b440800-91d6-11ea-85c6-821ca05204b2.png)
@@ -97,11 +97,11 @@ The WasteCoin solution is not just one feasible solution but also inclusive, saf
 ![image](https://user-images.githubusercontent.com/26861798/81468353-e1782e00-91d6-11ea-8f9e-ce0528e351b3.png)
 
 ## BUILT WITH
-* [Django](https://www.djangoproject.com) - Backend framework used
+*   [Django](https://www.djangoproject.com) - Backend framework used
 
-* [React](https://reactjs.org) - Frontend framework used
+*   [React](https://reactjs.org) - Frontend framework used
 
-* [Android](https://www.android.com) - Mobile framework used
+*   [Android](https://www.android.com) - Mobile framework used
 
 ## APK FILE
 [APK ANDROID](https://drive.google.com/file/d/1cIKDHHbNkmpPCrO91jaW2u3MIHfTb2_v/view?usp=sharing)
@@ -148,17 +148,17 @@ You should have **Python 3.5+** and **git** installed.
 `src/app.py` is the entry to the project and source code should go into the `src` folder.
 All tests should be written in the `tests` folder. tests/test_src.py is a sample test file that shows how tests should like. Feel free to delete it.
 #### Hints
-* Lint: `poetry run flake8`
+*   Lint: `poetry run flake8`
  
-* Run tests using the command: `poetry run pytest`
+*   Run tests using the command: `poetry run pytest`
 
-* Install dependencies: 
+*   Install dependencies: 
   `poetry add <dependency>`
   
-* Install dev dependencies:
+*   Install dev dependencies:
   `poetry add --dev <dev-dependency>`
   
-* Run your project:
+*   Run your project:
   `poetry run app`
 
 ## AUTHORS/TEAM - 105 MEMBERS
