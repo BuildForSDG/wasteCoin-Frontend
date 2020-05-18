@@ -5,7 +5,6 @@ import App from "./views/Landing/index";
 import AuthLayout from "./components/Layout/Auth";
 import SignIn from "./views/SignIn";
 import SignUp from "./views/SignUp";
-import VerificationPage from "./views/Verification";
 import ResetpasswordPage from "./views/ResetPassword";
 import AppLayout from "./components/Layout/AppLayout";
 import Dashboard from "./views/Dashboard";
@@ -29,12 +28,6 @@ const routing = () => (
         <Route path="/registration" render={(props) =>
           <AuthLayout>
             <SignUp {...props} />
-          </AuthLayout>
-        } />
-
-        <Route path="/verification" render={(props) =>
-          <AuthLayout>
-            <VerificationPage {...props} />
           </AuthLayout>
         } />
 
