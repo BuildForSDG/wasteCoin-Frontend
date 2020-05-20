@@ -9,6 +9,7 @@ import configureStore from "./redux/store";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import App from "./route";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,4 +19,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+serviceWorker.unregister();
 
