@@ -50,4 +50,108 @@
   .dashboard-body {
     padding: 2%;
   }
+
+  .dashboard {
+    padding-bottom: 100px;
+  }
+}
+
+.dashboard {
+  width: 100%;
+}
+
+.waste_coin_details {
+  display: flex;
+  align-items: center;
+}
+
+.waste_coin_details > p,
+.waste_coin_details > span {
+  color: #cad9ee;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.allocated_month {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.allocated_section > h6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.exchange_section > h6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.exchange_section > p > span {
+  color: #47b881;
+}
+
+.exchange_details {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.summary_section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary_section__header > h6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.mined_label,
+.unmined_label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9ea0a5;
+}
+
+.mined_value {
+  font-weight: 500;
+  font-size: 29px;
+  color: #1070ca;
+}
+
+.unmined_value {
+  font-weight: 500;
+  font-size: 29px;
+  color: #f7545e;
+}
+
+.adjust_padding {
+  padding-bottom: 13%;
+}
+
+.leader_pt {
+  display: flex;
+  align-items: center;
+}
+
+.leader_label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.leader_header {
+  background: rgba(56, 200, 232, 0.4);
 }

@@ -38,8 +38,26 @@ const routing = () => (
         } />
 
         <Route path="/dashboard" render={(props) =>
-          <AppLayout>
+          <AppLayout headerTitle="Dashboard">
             <Dashboard {...props} />
+          </AppLayout>
+        } />
+
+        <Route path="/profile" render={(props) =>
+          <AppLayout headerTitle="Profile">
+            <div>Profile</div>
+          </AppLayout>
+        } />
+
+        <Route path="/wallet" render={(props) =>
+          <AppLayout headerTitle="Wallet">
+            <div>Wallet</div>
+          </AppLayout>
+        } />
+
+        <Route path="/notification" render={(props) =>
+          <AppLayout headerTitle="Notification">
+            <div>Notification</div>
           </AppLayout>
         } />
       </Switch>

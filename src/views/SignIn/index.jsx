@@ -21,6 +21,10 @@ function SignIn(props) {
     setLoader(isLoadingState);
   },[isLoadingState]);
 
+  useEffect(() => {
+    localStorage.removeItem("token");
+  },[]);
+
   const onSubmit = (data) => {
     dispatch(loginUser(data, props.history));
   };

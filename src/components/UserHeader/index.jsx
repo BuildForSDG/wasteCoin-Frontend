@@ -4,11 +4,12 @@ import "./userHeader.css";
 import { Link } from "react-router-dom";
 
 
-function UserHeader() {
+function UserHeader(props) {
     return(
         <div>
             <nav className="navbar navbar-expand-lg appheader">
-            <Link to ="/" className="navbar-brand"><img src={wasteLogo} className="logo" alt="logo" /></Link>  
+            <Link to ="/" className="navbar-brand"><img src={wasteLogo} className="logo" alt="logo" /></Link> 
+            <h6>{props.headerTitle}</h6> 
             </nav>
             <div className="dashboard-header text-center">Dashboard</div>
         </div>

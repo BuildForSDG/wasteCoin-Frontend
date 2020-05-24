@@ -1,7 +1,7 @@
 .sidenav {
   height: calc(100% - 80px);
-  width: 270px;
-  position: fixed;
+  width: 250px;
+  position: relative;
   z-index: 1;
   bottom: 0;
   left: 0;
@@ -22,6 +22,12 @@
 }
 
 .sidenav-li:hover {
+  background-color: #38c8e850;
+  border-radius: 5px;
+  padding: 0 7%;
+}
+
+.active {
   background-color: #38c8e850;
   border-radius: 5px;
   padding: 0 7%;

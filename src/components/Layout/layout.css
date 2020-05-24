@@ -2,6 +2,10 @@
   padding: 0;
 }
 
+.main {
+  height: 100vh;
+}
+
 @media screen and (max-width: 760px) {
   .authlayout {
     height: 100vh;
