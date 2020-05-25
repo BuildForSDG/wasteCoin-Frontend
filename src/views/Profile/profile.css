@@ -1,0 +1,26 @@
+.profile {
+  padding: 0 100px 0 100px;
+}
+
+.bio-header,
+.account-header,
+.security-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.profile hr {
+  margin: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .profile {
+    padding: 0 10px 0 10px;
+    padding-bottom: 50px;
+  }
+}
+
+.account_form {
+  padding: 20px;
+}

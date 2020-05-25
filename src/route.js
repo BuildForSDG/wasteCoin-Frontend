@@ -9,6 +9,7 @@ import ResetpasswordPage from "./views/ResetPassword";
 import AppLayout from "./components/Layout/AppLayout";
 import Dashboard from "./views/Dashboard";
 import "./index.css";
+import Profile from "./views/Profile";
 
 const routing = () => (
   <Router>
@@ -45,7 +46,7 @@ const routing = () => (
 
         <Route path="/profile" render={(props) =>
           <AppLayout headerTitle="Profile">
-            <div>Profile</div>
+            <Profile />
           </AppLayout>
         } />
 
