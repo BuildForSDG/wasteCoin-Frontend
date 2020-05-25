@@ -21,11 +21,11 @@ function UserSidebar(props) {
         <li className={`nav-item sidenav-li ${props.headerTitle === "Dashboard" ? "active" : ""}`}>
           <Link to="/dashboard" className="nav-link" href="#how_it_works"><img src={home} className="logo" alt="Home-logo" /><span className="sidenav-span">&nbsp;Home</span></Link>
         </li>
-        <li className={`nav-item sidenav-li ${props.headerTitle === "Profile" ? "active" : ""}`}>
-          <Link to="/profile" className="nav-link"><img src={profile} className="logo" alt="Profile-logo" /> <span className="sidenav-span">Profile</span></Link>
-        </li>
         <li className={`nav-item sidenav-li ${props.headerTitle === "Wallet" ? "active" : ""}`}>
           <Link to="/wallet" className="nav-link"><img src={wallet} className="logo" alt="Wallet-logo" /><span className="sidenav-span">&nbsp;Wallet</span></Link>
+        </li>
+        <li className={`nav-item sidenav-li ${props.headerTitle === "Profile" ? "active" : ""}`}>
+          <Link to="/profile" className="nav-link"><img src={profile} className="logo" alt="Profile-logo" /> <span className="sidenav-span">Profile</span></Link>
         </li>
         <li className={`nav-item sidenav-li ${props.headerTitle === "Notification" ? "active" : ""}`}>
           <Link to="/notification" className="nav-link"><img src={notification} className="logo" alt="Notification-logo" /> <span className="sidenav-span">Notification</span></Link>

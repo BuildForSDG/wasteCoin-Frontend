@@ -23,7 +23,7 @@ function Profile() {
   return (
     <div className="profile container pt-4">
       <div className="card mb-5">
-        <div className="profile-bio shadow">
+        <div className="profile-bio shadow-sm">
           <div className="bio-header">
             <h6>Bio Data</h6>
             <button type="button" className="btn btn-light" data-toggle="modal" data-target="#biodataModal">
@@ -116,7 +116,7 @@ function Profile() {
       <div className="user-setting">
         <div className="row">
           <div className="col-sm-12 col-md-6">
-            <div className="card shadow mb-5">
+            <div className="card shadow-sm mb-5">
               <div className="account-header">
                 <h6>Account Details</h6>
                 <button type="button" className="btn btn-light" data-toggle="modal" data-target="#accountModal">
@@ -163,7 +163,7 @@ function Profile() {
 
           </div>
           <div className="col-sm-12 col-md-6">
-            <div className="card shadow mb-5">
+            <div className="card shadow-sm mb-5">
               <div className="security-header">
                 <h6>Security</h6>
                 <button type="button" className="btn btn-light" data-toggle="modal" data-target="#securityModal">

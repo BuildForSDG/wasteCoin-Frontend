@@ -14,7 +14,7 @@ function Dashboard() {
     <div className="dashboard container">
       <div className="row row-cols-1 row-cols-md-2 pt-3">
         <div className="col">
-          <div className="card shadow mb-4 adjust_padding">
+          <div className="card shadow-sm mb-4 adjust_padding">
             <div className="row pt-3">
               <div className="col-8 pl-5 pl-xs-3 allocated_section">
                 <h6>ALLOCATED WASTECOINS</h6>
@@ -31,7 +31,7 @@ function Dashboard() {
           </div>
         </div>
         <div className="col">
-          <div className="card shadow mb-4 adjust_padding">
+          <div className="card shadow-sm mb-4 adjust_padding">
             <div className="row pt-3">
               <div className="col-8 pl-5 pl-xs-3 exchange_section">
                 <h6>EXCHANGE RATE</h6>
@@ -51,7 +51,7 @@ function Dashboard() {
 
       <div className="row row-cols-1 row-cols-md-2 pt-3">
         <div className="col">
-          <div className="card shadow mb-4 pb-4">
+          <div className="card shadow-sm mb-4 pb-4">
             <div className="row pt-3">
               <div className="col pl-xs-3 summary_section">
                 <div className="summary_section__header pl-3 pr-3">
@@ -81,7 +81,7 @@ function Dashboard() {
           </div>
         </div>
         <div className="col">
-          <div className="card shadow mb-4 adjust_padding">
+          <div className="card shadow-sm mb-4 adjust_padding">
             <div className="row pt-3">
               <div className="col-8 pl-5 pl-xs-3 allocated_section">
                 <h6>TOTAL WASTE COINS MINED</h6>
@@ -99,7 +99,7 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="card shadow">
+      <div className="card shadow-sm">
         <div className="p-3 text-center leader_header">
           <p>Leader"s Board</p>
         </div>

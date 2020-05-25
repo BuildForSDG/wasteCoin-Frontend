@@ -10,6 +10,7 @@ import AppLayout from "./components/Layout/AppLayout";
 import Dashboard from "./views/Dashboard";
 import "./index.css";
 import Profile from "./views/Profile";
+import Wallet from "./views/Wallet";
 
 const routing = () => (
   <Router>
@@ -52,7 +53,7 @@ const routing = () => (
 
         <Route path="/wallet" render={(props) =>
           <AppLayout headerTitle="Wallet">
-            <div>Wallet</div>
+            <Wallet />
           </AppLayout>
         } />
 
