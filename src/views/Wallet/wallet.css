@@ -61,3 +61,10 @@
 .wallet_table_coin {
   display: flex;
 }
+
+.redeem_icon,
+.redeem_icon:hover,
+.redeem_icon:active {
+  border-color: transparent;
+  background-color: transparent;
+}

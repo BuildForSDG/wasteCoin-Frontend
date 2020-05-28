@@ -88,6 +88,19 @@ li > a {
   border: 1px solid transparent;
 }
 
+.form-control-btn {
+  width: 91%;
+  height: 47px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #7b7f9eb5;
+  background-color: #38c8e820;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+}
+
 .reg-submit {
   height: 42px;
   width: 50%;

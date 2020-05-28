@@ -1,7 +1,7 @@
 .userfooter {
   text-align: center;
   background-color: transparent;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   color: #82899b;
