@@ -5,6 +5,7 @@ import redeemCoins from "../../images/redeem_coins.svg";
 
 import "./wallet.css";
 import Pagination from "../../components/Pagination";
+import RedeemCoinModal from "../../components/RedeemCoinModal";
 
 function Wallet() {
 
@@ -20,7 +21,9 @@ function Wallet() {
       </div>
       <div className="redeem_coin_icon text-center">
         <p className="mb-0">Redeem Coins</p>
-        <img src={redeemCoins} alt="coin_logo" width="60" />
+        <button type="button" className="btn btn-light redeem_icon" data-toggle="modal" data-target="#redeem_coin">
+          <img src={redeemCoins} alt="coin_logo" width="60" />
+        </button>
       </div>
       <div className="card mt-5 shadow-sm pr-2">
         <div className="transaction-header">
@@ -78,6 +81,7 @@ function Wallet() {
         </div>
         <Pagination />
       </div>
+      <RedeemCoinModal id="redeem_coin" />
     </div>
   );
 }
