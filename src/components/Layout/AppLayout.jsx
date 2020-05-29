@@ -11,7 +11,7 @@ const AppLayout = (props) => {
             <UserHeader headerTitle={props.headerTitle} />
             <div className="row">
                 <div className="col-xs-0 col-lg-2 col-md-2">
-                    <UserSidebar headerTitle={props.headerTitle} />
+                    <UserSidebar headerTitle={props.headerTitle} {...props} />
                 </div>
                 <div className="col-xs-12 col-lg-10">
                     <div className="main">

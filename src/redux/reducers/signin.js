@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 
 import { LOGIN_USER, PAGE_LOADING, PAGE_LOADED } from "./constant";
 import { isLoading, isLoaded } from "../util";
+import Auth from "../../components/Auth";
 
 const loginUserAsync = (response) => ({
   type: LOGIN_USER,
@@ -25,7 +26,10 @@ export const loginUser = (userDetails, history) => async (dispatch) => {
   dispatch(loginUserAsync(res.data));
   toast.success(res.data.message);
   localStorage.setItem("token", res.data.token);
-  history.push("/dashboard");
+
+  Auth.login(() => {
+    history.push("/dashboard");
+  });
 
 };
 

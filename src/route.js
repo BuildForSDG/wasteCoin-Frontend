@@ -11,6 +11,7 @@ import Dashboard from "./views/Dashboard";
 import "./index.css";
 import Profile from "./views/Profile";
 import Wallet from "./views/Wallet";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const routing = () => (
   <Router>
@@ -38,25 +39,11 @@ const routing = () => (
             <ResetpasswordPage {...props} />
           </AuthLayout>
         } />
-
-        <Route path="/dashboard" render={(props) =>
-          <AppLayout headerTitle="Dashboard">
-            <Dashboard {...props} />
-          </AppLayout>
-        } />
-
-        <Route path="/profile" render={(props) =>
-          <AppLayout headerTitle="Profile">
-            <Profile />
-          </AppLayout>
-        } />
-
-        <Route path="/wallet" render={(props) =>
-          <AppLayout headerTitle="Wallet">
-            <Wallet />
-          </AppLayout>
-        } />
-
+        
+        <ProtectedRoute path="/dashboard" page="Dashboard" component={Dashboard} />
+        <ProtectedRoute path="/profile" page="Profile" component={Profile} />
+        <ProtectedRoute path="/wallet" page="Wallet" component={Wallet} />
+        {/* <ProtectedRoute path="/notification" page="Notification" component={Dashboard} /> */}
         <Route path="/notification" render={(props) =>
           <AppLayout headerTitle="Notification">
             <div>Notification</div>

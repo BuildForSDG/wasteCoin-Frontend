@@ -43,7 +43,7 @@ function Wallet() {
           </div>
         </div>
         <div className="transaction-body">
-          <table class="table">
+          <table className="table">
             <thead className="table__head">
               <tr>
                 <th scope="col">Date</th>
