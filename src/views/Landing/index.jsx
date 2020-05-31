@@ -9,144 +9,240 @@ import wasteLogo from "../../images/waste_coin_logo.svg";
 import goingGreen from "../../images/goinggreen.svg";
 import facebook from "../../images/facebook.svg";
 import andela from "../../images/andela.svg";
+import signup from "../../images/signup.svg";
+import collect from "../../images/collect.svg";
+import deliver from "../../images/deliver.svg";
+import paid from "../../images/paid.svg";
+import signin from "../../images/signin.svg";
+import get_rewarded from "../../images/get_rewarded.svg";
+import image_top from "../../images/top_image_landing.svg";
+import why_reward from "../../images/why01.svg";
+import why_future from "../../images/why02.svg";
 import forwardArrow from "../../images/arrow_forward.svg";
 import { Link } from "react-router-dom";
 
 const Landing = () => (
   <div className="landing_page">
-    <section className="row">
+    <section className="row section_styling">
       <div className="col-xs-12 col-xl-5 landing_page__create_account">
         <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
-        <h1>Hey there!</h1>
-        <h3>Get rewards for disposing waste <br /> Properly</h3>
+        <div className="desktop">
+            <h1>Join the Waste Revolution</h1>
+            <h3>At Wastecoin, we believe proper waste <br /> 
+            collection, disposal is possible and <br/>
+          <span>EVERYONE'S RESPONSIBILITY</span>
+            </h3>
+        </div>
+        <div className="mobile">
+            <h1>Hey there!</h1>
+            <h3>Get rewards for disposing waste <br/>Properly</h3>
+            <br/><br/><p>Join us, its Free</p>
+        </div>
         <Link to="/registration" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</Link>
       </div>
       <div className="d-none col-xlg-7 d-xl-block landing_page__waste">
-        <img src={wasteCoinWallet} alt="waste_coin_wallet_img" />
+        <img src={image_top} alt="image_top_img" />
       </div>
-      
       <div className="d-block d-sm-none landing_page__create_account__mobile">
-        <p>Join us, its Free</p>
         <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
         <p><Link to="/registration">Create an account</Link></p>
       </div>
       
     </section>
 
-    <section className="row d-none d-sm-flex landing_page__info">
-      <div className="col-lg-12 col-xl-6 landing_page__info__first_subsection">
-        <div className="row landing_page__info__about">
-          <h1>About</h1>
-          <p> WasteCoin is light e-wallet powered by SDG Innovation
-          Team-105. It is developed to reward proper and efficient
-          disposal of non-biodegradable waste from the source to the recycler.
-              A decentralized waste solution where you get an incentive for every waste mined.</p>
+    <section className="row d-none d-sm-flex landing_page__get_rewarded">
+      <div className="row get_rewarded">
+        <div className="d-none col-xlg-7 d-xl-block images-left left_side">
+        <img src={get_rewarded} alt="get_rewarded_img" />
         </div>
-
-        <div className="row landing_page__info__waste_coin_info" id="how_it_works">
-          <div className="col-sm-12 col-md-8">
-            <h1>How is WasteCoin generated</h1>
-            <p>Generation and allocation of WasteCoin is monthly and
-            mined on the forcasted amount of waste to be generated
-            in a particular geograhical area of interest.
-            Thus, WasteCoins available to be mined are limited
-            and the earlier to start to mine (collect and dispose
-            through the WasteCoin Process) the more coin you get and
-            leverage on incentives ranging from cash, recharge cards,
-              data subscription and others.</p>
+        <div className="d-none col-xlg-5 d-xl-block words right_side_up">
+          <h1>Get Rewarded for it</h1>
+          <h3> We also believe Everyone should be <span>REWARDED</span><br/> 
+              for such good waste disposal habit.</h3>
+        </div>
+      </div>
+    </section>
+    <section className="row d-none d-sm-flex landing_page__get_rewarded">
+      <div className="row get_rewarded">
+        <div className="d-none col-xlg-5 d-xl-block words right_side">
+          <h1>Why?</h1>
+          <h3> It is <span>NOT</span> about the <span>REWARD</span><br/> 
+              It is about the <span>APPRECIATION</span></h3>
+        </div>
+        <div className="d-none col-xlg-7 d-xl-block images_right left_side">
+        <img src={why_reward} alt="why01_img" />
+        </div>
+      </div>
+    </section>
+    <section className="row d-none d-sm-flex landing_page__get_rewarded">
+      <div className="row get_rewarded">
+        <div className="d-none col-xlg-5 d-xl-block words left_side">
+          <img src={why_future} alt="why02_img" />
+        </div>
+        <div className="d-none col-xlg-7 d-xl-block words right_side_special">
+          <h3> It is <span>NOT</span> about <span>NOW</span><br/> 
+                It is  about the <span>FUTURE</span><br/> 
+                  It is about preserving the <span>ECOSYSTEM</span></h3>
+        </div>
+      </div>
+    </section>
+    <section className="row section_styling_how d-none d-sm-flex" id="how_it_works">
+    <div className="how"><h1 className="h1">How it works?</h1></div>
+      <div className="cont_how">
+        <div className="row signup">
+          <div className="d-none col-xlg-5 d-xl-block word_left">
+            <h1 className="h1">Sign up</h1>
+            <h3 className="h3"> <span className="span">CREATE</span> a Wastecoin account with ease<br/> 
+                <span className="span">ENSURE</span> you provide accurate and correct data <br/>to avoid future payment issues</h3>
           </div>
-          <div className="d-none d-md-block col landing_page__img">
-
-          <img src={openSrc} alt="open_src_img" />
+          <div className="d-none col-xlg-7 d-xl-block image_right">
+          <img src={signup} alt="signup_img" />
           </div>
         </div>
-
-        <div className="row landing_page__info__get_waste_coin_info">
-          <h1>Why you should join this Waste Revolution</h1>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>More than fifty percent of non-biodegrabale
-            waste such as PET bottles, cartons, nylons ends
-                up in the ocean and other water bodies.</p>
+        <div className="row signin">
+          <div className="d-none col-xlg-7 d-xl-block image_right">
+          <img src={signin} alt="signin_img" />
           </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>Twenty percent ends up in our streets,
-                gutters and hidden areas of our environment</p>
+          <div className="d-none col-xlg-5 d-xl-block word_right">
+            <h1 className="h1">Sign in</h1>
+            <h3 className="h3"> Sign in with your <span className="span">PHONE NUMBER</span> and<br/> 
+                password details</h3>
           </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>The rest are either successfully recovered
-                and recylced or end up at the waste site </p>
+        </div>
+        <div className="row collect_waste">
+          <div className="d-none col-xlg-5 d-xl-block word_left">
+            <h1 className="h1">Collect Waste</h1>
+            <h3 className="h3">Consciously mine waste (collect and gather)<br/>your
+                <span className="span"> PET bottles and cartons</span> used in your home, 
+                <br/>at work or where ever you are,
+                in your spare time</h3>
           </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>Unfortunately, the accumulations of these
-            items over the years in the water bodies are
-            beginning to have negative ecological effect
-                on the ecosystem. </p>
+          <div className="d-none col-xlg-7 d-xl-block image_right">
+          <img src={collect} alt="collect_img" />
           </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>Our environments are dirty, poorly managed, unsafe and unsustainable on the long run</p>
+        </div>
+        <div className="row deliver">
+          <div className="d-none col-xlg-7 d-xl-block image_right">
+          <img src={deliver} alt="deliver_img" />
           </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>Our world is on a collision course with disaster
-            if we do not take active steps individually, collectively
-                to change our habits of poor waste disposal and management.</p>
+          <div className="d-none col-xlg-5 d-xl-block word_left">
+            <h1 className="h1">Deliever to a Wastecoin Agent</h1>
+            <h3 className="h3"> Our Agents are around you. Deliever to them<br/> 
+                You can go to them or they can come to you</h3>
           </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>Your effort can go a very long way to save our cities,
-                sustain them and the ecosystem at large.</p>
+        </div>
+        <div className="row paid">
+          <div className="d-none col-xlg-5 d-xl-block word_left">
+            <h1 className="h1">Get paid in Wastecoin</h1>
+            <h3 className="h3">Our agents weights the Waste you deliever and<br/>
+                pay you the equivalent amount in Wastecoin.
+                <br/>This is paid into your Wastecoin wallet</h3>
           </div>
-          <div className="landing_page__reason__btn text-center">
-            <a href="##" className="btn btn-block" >Get a WasteCoin Wallet Now!</a>
+          <div className="d-none col-xlg-7 d-xl-block image_right">
+          <img src={paid} alt="paid_img" />
+          </div>
+        </div>
+        <div className="row redeem">
+          <div className="d-none col-xlg-7 d-xl-block image_right">
+          <img src={wasteCoinWallet} alt="redeem_img" />
+          </div>
+          <div className="d-none col-xlg-5 d-xl-block word_left">
+            <h1 className="h1">Accumulate/Redeem Wastecoins</h1>
+            <h3 className="h3"> On getting paid, you can choose to <br/> 
+                accumulate it and let your wastecoin grow significantly
+                <br/> as you would keep your money in a bank.<br/>
+                OR
+                <br/> Redeem the Wastecoins in exchange for rewards such as 
+                <br/> Cash, Data subscription, Recharge cards amongst other incentives</h3>
           </div>
         </div>
       </div>
+    </section>
+    <section className="row d-none d-sm-flex contact d-none">
+    <div className="how" id="contact_us">
+      <h1 className="h1">Contact us</h1>
+      <h3 className="h3">Tell us how we can be of assistance and we'll get in touch shortly </h3>
+    </div>
+      <form className="form-control reg-form contact_form">
+          <div className="row">
+            <div className="contact_form_container">
+            <h3 className="h3">Full Name</h3>
+              <div className="form-group text-left">
+                <input type="text"
+                  className="form-control-contact"
+                  id="fullName"
+                  name="fullName"
+                />
 
-      <div className="col-lg-12 col-xl-6 landing_page__info__second_subsection">
-        <div className="row landing_page__info__how_it_works">
-          <h1>How it works</h1>
-          <img src={workflow} alt="workflow_img" />
+              </div>
+            </div>
+          </div>
+          <div className="row left-padding">
+            <div className="contact_form_container_half pull-left">
+              <div className="pull-left">
+                <h3 className="h3">Email</h3>
+                <div className="form-group text-left">
+                  <input type="email"
+                    className="form-control-contact"
+                    id="email"
+                    name="email"
+                  />
+
+                </div>
+              </div>
+              
+            </div>
+            <div className="contact_form_container_half pull-right">
+              <div className="pull-left">
+                <h3 className="h3">Phone Number (Optional)</h3>
+                <div className="form-group text-left">
+                  <input type="number"
+                    className="form-control-contact"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                  />
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div className="row">
+            <div className="contact_form_container">
+            <h3 className="h3">Message</h3>
+              <div className="form-group text-left">
+                <textarea type="text"
+                  className="form-control-contact-text"
+                  id="message"
+                  name="message"
+                />
+
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 submit-contact-div">
+          <button type="submit" className="contact-submit" >
+            Send Message
+            </button>
         </div>
-
-        <div className="row landing_page__info__keys_to_know">
-          <h1>Key Facts you need to know</h1>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>About 4.2 billion plastic items are used every month in Nigeria </p>
+      </form>
+    </section>
+    <section className="row d-none d-sm-flex partners d-none">
+      <div className="how"><h1 className="h1">Our Partners</h1></div>
+      <div className="row partner_column">
+            <div className="col-md-3">
+              <img src={facebook} alt="facebook_img" />
+            </div>
+            <div className="col-md-3">
+              <img src={goingGreen} alt="goinggreen_img" />
+            </div>
+            <div className="col-md-3">
+              <img src={andela} alt="andela_img" />
+            </div>
+            <div className="col-md-3">
+              <img src={wastePoint} alt="wastepoint_img" />
+            </div>
           </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>Every minute 3000 plastic items are dumped improperly.</p>
-          </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>At least 260 species of acquatic life is endangered by the influx of plastic into oceans and other water bodies</p>
-          </div>
-          <div className="landing_page__reason">
-            <img src={bullet} alt="bullet_img" />
-            <p>One plastic item produced has a desctructive span of about 1000 years.</p>
-          </div>
-        </div>
-
-        <div className="row landing_page__info__partners">
-          <h1>Our Partners</h1>
-          <p>We are in partnership with reputable Recyling companies all over the 36 states of the Federation and the FCT. Some of our Partners include:</p>
-          <div className="d-none d-sm-block partners_logo">
-            <img src={wastePoint} alt="waste_point_img" />
-            <img src={goingGreen} alt="going_green_img" />
-          </div>
-
-          <div className="d-none d-sm-block partners_logo">
-            <img src={facebook} alt="face_book_img" />
-            <img src={andela} alt="andela_img" />
-          </div>
-        </div>
-      </div>
     </section>
   </div>
 );

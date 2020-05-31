@@ -14,8 +14,7 @@ const Footer = () => (
     <div className="col-sm-6 col-md-4 mb-3 footer__about">
       <h2>About</h2>
       <ul>
-        <li>Introducing</li>
-        <li>Terms of Service</li>
+        <li>Our Team</li>
         <li>Privacy Policy</li>
       </ul>
     </div>
@@ -23,14 +22,8 @@ const Footer = () => (
     <div className="col-sm-6 mb-3 col-md-4 footer__contact">
       <h2>Contact</h2>
       <p>hello@wastecoinwallet.com</p>
-      <ul>
-        <li><a href="http://twitter.com" > <img src={ph} alt="ph_img" /></a></li>
-        <li><a href="http://github.com" > <img src={github} alt="github_img" /></a></li>
-        <li><a href="http://reddit.com" > <img src={reddit} alt="reddit_img" /></a></li>
-        <li><a href="http://twitter.com" > <img src={bitcointalk} alt="bitcoin_talk_img" /></a></li>
-        <li><a href="http://twitter.com" > <img src={blockStack} alt="block_stack_img" /></a></li>
-        <li><a href="http://twitter.com" > <img src={twitter} alt="twitter_img" /></a></li>
-      </ul>
+      <p>FAQ</p>
+      
     </div>
 
     <div className="col footer__news_letter">
