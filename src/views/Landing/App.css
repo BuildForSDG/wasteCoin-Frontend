@@ -65,12 +65,12 @@ body{
   margin-top:30px;
 }
 .section_styling{
-  background-color: #2AD2BE20;
+  background-color: #2ad2be20;
   height: 70vh;
   border-radius: 0 0 90% 0px;
 }
 .section_styling_how{
-  background-color: #38C8E820;
+  background-color: #38c8e820;
   margin-bottom:30px;
   padding-bottom: 50px;
 }
@@ -88,7 +88,6 @@ body{
   width:34.5%;
   padding-right: 2.5%;
   padding-left: 0.5%;
-  /* margin:auto; */
 }
 .submit-contact-div{
   text-align: right;
@@ -121,7 +120,7 @@ h1 {
   font-weight: bold;
   font-size: 30px;
   line-height: 46px;
-  color: #08809A;
+  color: #08809a;
 }
 .landing_page__create_account h3 > span {
   font-weight: bold;
@@ -147,7 +146,7 @@ h1 {
   font-weight: 400;
   line-height: 1.5;
   color: #7b7f9eb5;
-  background-color: #2AD2BE30;
+  background-color: #2ad2be30;
   background-clip: padding-box;
   border: 1px solid transparent;
 }
@@ -160,36 +159,31 @@ h1 {
   font-weight: 400;
   line-height: 1.5;
   color: #7b7f9eb5;
-  background-color: #2AD2BE30;
+  background-color: #2ad2be30; 
   background-clip: padding-box;
   border: 1px solid transparent;
 }
 
-/* get rewarded section */
-/* .landing_page__get_rewarded{
-  margin-left:-15%;
-  margin-right:-15%;
-} */
 .right_side h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 46px;
-  color: #08809A;
+  color: #08809a;
 }
 .right_side_up h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 46px;
-  color: #08809A;
+  color: #08809a;
 }
 .h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 46px;
-  color: #08809A;
+  color: #08809a;
 }
 .how{
   width:100%;
@@ -309,192 +303,3 @@ h1 {
   margin-top: 36px;
   background: linear-gradient(83.94deg, rgba(42, 210, 190, 0.74) 16.09%, rgba(56, 200, 232, 0.71) 95.47%);
 }
-
-/* .landing_page__info__first_subsection div,
-.landing_page__info__second_subsection div {
-  margin-bottom: 10px;
-  align-items: center;
-  margin-left: 0;
-} */
-
-/* .landing_page__info__about {
-  background: rgba(42, 210, 190, 0.2);
-  border-radius: 6px;
-  padding: 30px;
-}
-
-.landing_page__info__about p {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 29px;
-  color: #82899b;
-}
-
-.landing_page__info__about h1 {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #08809a;
-}
-
-.landing_page__info__waste_coin_info {
-  background: rgba(56, 200, 232, 0.2);
-  border-radius: 6px;
-  padding: 25px;
-  position: relative;
-}
-
-.landing_page__info__waste_coin_info h1 {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #08809a;
-}
-
-.landing_page__info__waste_coin_info p {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 29px;
-  color: #82899b;
-  width: 300px;
-}
-
-.landing_page__info__waste_coin_info img {
-  width: 100%;
-} */
-
-/* .landing_page__img {
-  align-items: center;
-} */
-
-/* .landing_page__info__get_waste_coin_info {
-  background: rgba(42, 210, 190, 0.2);
-  border-radius: 6px;
-  padding: 30px;
-} */
-
-/* .landing_page__reason__btn {
-  padding: 0 20%;
-  margin-top: 10px;
-  width: 100%;
-}
-
-.landing_page__info__get_waste_coin_info img {
-  margin-right: 10px;
-}
-
-.landing_page__info__get_waste_coin_info h1 {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #08809a;
-}
-
-.landing_page__info__how_it_works {
-  height: 505px;
-  background: rgba(42, 210, 190, 0.2);
-  border-radius: 6px;
-  padding: 35px;
-}
-
-.landing_page__info__how_it_works h1 {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #08809a;
-  text-align: right;
-  width: 100%;
-}
-
-.landing_page__info__how_it_works img {
-  margin: 30px 0;
-  justify-content: center;
-}
-
-.landing_page__info__keys_to_know {
-  height: 440px;
-  background: rgba(56, 200, 232, 0.2);
-  border-radius: 6px;
-  padding: 29px;
-}
-
-.landing_page__info__keys_to_know h1 {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #08809a;
-  text-align: right;
-  width: 100%;
-}
-
-.landing_page__info__partners {
-  height: 552px;
-  background: rgba(42, 210, 190, 0.2);
-  border-radius: 6px;
-  padding: 25px;
-}
-
-.landing_page__info__partners h1 {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #08809a;
-  text-align: right;
-  width: 100%;
-}
-
-.landing_page__info__partners p {
-  width: 415px;
-  height: 96px;
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 29px;
-  color: #82899b;
-}
-
-.landing_page__reason {
-  display: flex;
-  align-items: center;
-}
-
-.landing_page__reason p {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 29px;
-  color: #82899b;
-  margin: 0;
-}
-
-.landing_page__bullet {
-  width: 40px;
-  height: 25px;
-  border-radius: 50%;
-  margin: 0;
-  background: linear-gradient(324.53deg, #315efb -27.5%, rgba(49, 94, 251, 0) 108.52%);
-} */
-
-/* .partners_logo {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-} */

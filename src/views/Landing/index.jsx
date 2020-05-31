@@ -26,7 +26,6 @@ const Landing = () => (
     <section className="row section_styling">
       <div className="col-xs-12 col-xl-5 landing_page__create_account">
         <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
-        {/* desktop */}
         <div className="desktop">
             <h1>Join the Waste Revolution</h1>
             <h3>At Wastecoin, we believe proper waste <br /> 
@@ -44,7 +43,6 @@ const Landing = () => (
       <div className="d-none col-xlg-7 d-xl-block landing_page__waste">
         <img src={image_top} alt="image_top_img" />
       </div>
-        {/* mobile */}
       <div className="d-block d-sm-none landing_page__create_account__mobile">
         <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
         <p><Link to="/registration">Create an account</Link></p>
@@ -53,7 +51,6 @@ const Landing = () => (
     </section>
 
     <section className="row d-none d-sm-flex landing_page__get_rewarded">
-      {/* geet rewarded section */}
       <div className="row get_rewarded">
         <div className="d-none col-xlg-7 d-xl-block images-left left_side">
         <img src={get_rewarded} alt="get_rewarded_img" />
@@ -66,9 +63,7 @@ const Landing = () => (
       </div>
     </section>
     <section className="row d-none d-sm-flex landing_page__get_rewarded">
-      {/* why section */}
       <div className="row get_rewarded">
-        {/* reward */}
         <div className="d-none col-xlg-5 d-xl-block words right_side">
           <h1>Why?</h1>
           <h3> It is <span>NOT</span> about the <span>REWARD</span><br/> 
@@ -81,7 +76,6 @@ const Landing = () => (
     </section>
     <section className="row d-none d-sm-flex landing_page__get_rewarded">
       <div className="row get_rewarded">
-        {/* future */}
         <div className="d-none col-xlg-5 d-xl-block words left_side">
           <img src={why_future} alt="why02_img" />
         </div>
@@ -92,13 +86,10 @@ const Landing = () => (
         </div>
       </div>
     </section>
-    {/* **************** */}
-    {/* how it works */}
     <section className="row section_styling_how d-none d-sm-flex" id="how_it_works">
     <div className="how"><h1 className="h1">How it works?</h1></div>
       <div className="cont_how">
         <div className="row signup">
-          {/* signup*/}
           <div className="d-none col-xlg-5 d-xl-block word_left">
             <h1 className="h1">Sign up</h1>
             <h3 className="h3"> <span className="span">CREATE</span> a Wastecoin account with ease<br/> 
@@ -109,7 +100,6 @@ const Landing = () => (
           </div>
         </div>
         <div className="row signin">
-          {/* signin*/}
           <div className="d-none col-xlg-7 d-xl-block image_right">
           <img src={signin} alt="signin_img" />
           </div>
@@ -120,7 +110,6 @@ const Landing = () => (
           </div>
         </div>
         <div className="row collect_waste">
-          {/* collect waste*/}
           <div className="d-none col-xlg-5 d-xl-block word_left">
             <h1 className="h1">Collect Waste</h1>
             <h3 className="h3">Consciously mine waste (collect and gather)<br/>your
@@ -133,7 +122,6 @@ const Landing = () => (
           </div>
         </div>
         <div className="row deliver">
-          {/* deliver to wastecoin agent*/}
           <div className="d-none col-xlg-7 d-xl-block image_right">
           <img src={deliver} alt="deliver_img" />
           </div>
@@ -144,7 +132,6 @@ const Landing = () => (
           </div>
         </div>
         <div className="row paid">
-          {/* get paid*/}
           <div className="d-none col-xlg-5 d-xl-block word_left">
             <h1 className="h1">Get paid in Wastecoin</h1>
             <h3 className="h3">Our agents weights the Waste you deliever and<br/>
@@ -156,7 +143,6 @@ const Landing = () => (
           </div>
         </div>
         <div className="row redeem">
-          {/* accumulate and redeem wastecoin*/}
           <div className="d-none col-xlg-7 d-xl-block image_right">
           <img src={wasteCoinWallet} alt="redeem_img" />
           </div>
@@ -172,7 +158,6 @@ const Landing = () => (
         </div>
       </div>
     </section>
-    {/* contact us section */}
     <section className="row d-none d-sm-flex contact d-none">
     <div className="how" id="contact_us">
       <h1 className="h1">Contact us</h1>
@@ -242,7 +227,6 @@ const Landing = () => (
         </div>
       </form>
     </section>
-    {/* partners section */}
     <section className="row d-none d-sm-flex partners d-none">
       <div className="how"><h1 className="h1">Our Partners</h1></div>
       <div className="row partner_column">
