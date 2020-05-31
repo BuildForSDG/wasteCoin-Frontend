@@ -2,23 +2,30 @@
   height: 500px;
   display: flex;
 }
-
+body{
+  overflow-x: hidden;
+}
 .landing_page__info {
   margin-top: 40px;
 }
-
+.get_rewarded{
+  margin:auto;
+}
 .landing_page__create_account {
-  padding-left: 200px;
+  padding-left: 400px;
 }
 
 .landing_page__create_account__mobile {
-  padding: 50px 50px 0 50px;
+  width:100%;
+  margin-left:20%;
 }
-
+.landing_page__get_rewarded{
+  padding-left:100px;
+}
 .landing_page__create_account__mobile a > button {
   background: #38c8e8;
   border-radius: 10px;
-  width: 300px;
+  width: 100%;
   height: 42px;
   margin-top: 78px;
   border-color: transparent;
@@ -106,8 +113,8 @@ h1 {
   margin: 0;
 }
 .landing_page{
-  margin-left:-15%;
-  margin-right:-15%;
+  margin-left:-35%;
+  margin-right:-35%;
 }
 .landing_page__create_account h1 {
   font-style: normal;
@@ -192,21 +199,27 @@ h1 {
   padding-left:200px;
 }
 .image_right{
-  padding-left:200px;
+  padding-left:0px;
 }
 .left_side{
-  margin-left:200px;
+  margin-left:-140px;
 }
 .word_left{
-  margin-left:200px;
-  padding-top:100px
+  margin-left:100px;
+  padding-top:100px;
+  margin-right:150px;
+}
+.word_right{
+  margin-left:250px;
+  padding-top:100px;
+  margin-right:50px;
 }
 .right_side{
-  padding: 150px 0 0 200px;
+  padding: 150px 200px 0 0;
   text-align: right;
 }
 .right_side_special{
-  padding: 150px 0 0 520px;
+  padding: 200px 0 0 520px;
   text-align: right;
 }
 .right_side_special h3 > span {
@@ -214,6 +227,9 @@ h1 {
 }
 .span {
   font-weight: bold;
+}
+.cont_how{
+  margin:auto;
 }
 .h3 {
   font-size: 17px;
@@ -230,7 +246,7 @@ h1 {
   line-height: 164.57%;
 }
 .right_side_up{
-  padding: 150px 0 0 120px;
+  padding: 150px 0 0 100px;
   text-align: right;
 }
 .right_side_up h3 > span {
@@ -264,7 +280,11 @@ h1 {
     line-height: 154.3%;
     color: #7b7f9e;
   }
-
+  body{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
   .landing_page__create_account__mobile p:nth-child(1) {
     text-align: left;
   }
@@ -272,6 +292,13 @@ h1 {
   .landing_page__create_account h1 {
     font-style: normal;
     font-weight: normal;
+  }
+  .landing_page__create_account {
+    padding-left: 25%;
+    width:100%;
+  }
+  .section_styling {
+    padding:18%;
   }
 }
 

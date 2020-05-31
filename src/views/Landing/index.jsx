@@ -27,11 +27,18 @@ const Landing = () => (
       <div className="col-xs-12 col-xl-5 landing_page__create_account">
         <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
         {/* desktop */}
-        <h1>Join the Waste Revolution</h1>
-        <h3>At Wastecoin, we believe proper waste <br /> 
-        collection, disposal is possible and <br/>
-      <span>EVERYONE'S RESPONSIBILITY</span>
-        </h3>
+        <div className="desktop">
+            <h1>Join the Waste Revolution</h1>
+            <h3>At Wastecoin, we believe proper waste <br /> 
+            collection, disposal is possible and <br/>
+          <span>EVERYONE'S RESPONSIBILITY</span>
+            </h3>
+        </div>
+        <div className="mobile">
+            <h1>Hey there!</h1>
+            <h3>Get rewards for disposing waste <br/>Properly</h3>
+            <br/><br/><p>Join us, its Free</p>
+        </div>
         <Link to="/registration" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</Link>
       </div>
       <div className="d-none col-xlg-7 d-xl-block landing_page__waste">
@@ -39,7 +46,6 @@ const Landing = () => (
       </div>
         {/* mobile */}
       <div className="d-block d-sm-none landing_page__create_account__mobile">
-        <p>Join us, its Free</p>
         <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
         <p><Link to="/registration">Create an account</Link></p>
       </div>
@@ -58,6 +64,8 @@ const Landing = () => (
               for such good waste disposal habit.</h3>
         </div>
       </div>
+    </section>
+    <section className="row d-none d-sm-flex landing_page__get_rewarded">
       {/* why section */}
       <div className="row get_rewarded">
         {/* reward */}
@@ -70,8 +78,9 @@ const Landing = () => (
         <img src={why_reward} alt="why01_img" />
         </div>
       </div>
-
-      <div className="row get_future">
+    </section>
+    <section className="row d-none d-sm-flex landing_page__get_rewarded">
+      <div className="row get_rewarded">
         {/* future */}
         <div className="d-none col-xlg-5 d-xl-block words left_side">
           <img src={why_future} alt="why02_img" />
@@ -83,10 +92,11 @@ const Landing = () => (
         </div>
       </div>
     </section>
+    {/* **************** */}
     {/* how it works */}
-    <section className="row section_styling_how" id="how_it_works">
+    <section className="row section_styling_how d-none d-sm-flex" id="how_it_works">
     <div className="how"><h1 className="h1">How it works?</h1></div>
-      <div >
+      <div className="cont_how">
         <div className="row signup">
           {/* signup*/}
           <div className="d-none col-xlg-5 d-xl-block word_left">
@@ -103,7 +113,7 @@ const Landing = () => (
           <div className="d-none col-xlg-7 d-xl-block image_right">
           <img src={signin} alt="signin_img" />
           </div>
-          <div className="d-none col-xlg-5 d-xl-block word_left">
+          <div className="d-none col-xlg-5 d-xl-block word_right">
             <h1 className="h1">Sign in</h1>
             <h3 className="h3"> Sign in with your <span className="span">PHONE NUMBER</span> and<br/> 
                 password details</h3>
@@ -163,7 +173,7 @@ const Landing = () => (
       </div>
     </section>
     {/* contact us section */}
-    <section className="row  contact">
+    <section className="row d-none d-sm-flex contact d-none">
     <div className="how" id="contact_us">
       <h1 className="h1">Contact us</h1>
       <h3 className="h3">Tell us how we can be of assistance and we'll get in touch shortly </h3>
@@ -233,7 +243,7 @@ const Landing = () => (
       </form>
     </section>
     {/* partners section */}
-    <section className="row  partners">
+    <section className="row d-none d-sm-flex partners d-none">
       <div className="how"><h1 className="h1">Our Partners</h1></div>
       <div className="row partner_column">
             <div className="col-md-3">
