@@ -24,7 +24,6 @@ export const loginUser = (userDetails, history) => async (dispatch) => {
   }
 
   dispatch(loginUserAsync(res.data));
-  toast.success(res.data.message);
   localStorage.setItem("token", res.data.token);
 
   Auth.login(() => {

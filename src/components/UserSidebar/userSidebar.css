@@ -38,11 +38,8 @@
   color: #000;
 }
 
-.sidenav-span {
-  padding-left: 30px;
-}
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 769px) {
   .sidenav {
     height: 80px;
     width: 96%;
@@ -64,7 +61,7 @@
   .sidenav-ul-mobile {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 3%;
+    margin-top: 0;
   }
 
   .menu-box > a {

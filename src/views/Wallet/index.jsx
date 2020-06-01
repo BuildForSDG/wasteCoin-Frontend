@@ -31,7 +31,7 @@ function Wallet() {
           <div className="search-date">
             <form className="form-inline wallet-header-input">
               <div className="form-group mb-2">
-                <label for="staticEmail2" className="mr-4">From</label>
+                <label htmlFor="staticEmail2" className="mr-4">From</label>
                 <input type="date" className="form-control" id="inputPassword2" placeholder="From" />
               </div>
               <div className="form-group mx-sm-3 mb-2">
