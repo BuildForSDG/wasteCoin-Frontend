@@ -8,7 +8,7 @@ function ProtectedRoute({ component: Component, ...rest }) {
   return (
     <Route {...rest}
       render={(props) => {
-        if (Auth.isAuthenticated()) {
+        if (Auth.isAuthenticated() || localStorage.getItem("token")) {
           return (
             <AppLayout headerTitle={rest.page} {...props}>
               <Component {...props} />

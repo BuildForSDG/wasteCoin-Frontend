@@ -1,14 +1,13 @@
 import React from "react";
 import Loader from "react-loader-spinner";
 
-
 function Spinner(props) {
   return (
     <Loader
-      type="Bars"
-      color="#fff"
-      height={30}
-      width={30}
+      type={props.spinnerType || "Bars"}
+      color={props.color || "#fff"}
+      height={props.height || 30}
+      width={props.width || 30}
       {...props}
     />
   );

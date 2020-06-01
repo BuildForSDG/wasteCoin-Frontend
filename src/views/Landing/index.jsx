@@ -1,9 +1,6 @@
 import React from "react";
 import "./App.css";
 import wasteCoinWallet from "../../images/waste_coin_wallet.svg";
-import openSrc from "../../images/open_source.svg";
-import workflow from "../../images/workflow.svg";
-import bullet from "../../images/bullet.svg";
 import wastePoint from "../../images/waste_point.svg";
 import wasteLogo from "../../images/waste_coin_logo.svg";
 import goingGreen from "../../images/goinggreen.svg";
@@ -14,10 +11,10 @@ import collect from "../../images/collect.svg";
 import deliver from "../../images/deliver.svg";
 import paid from "../../images/paid.svg";
 import signin from "../../images/signin.svg";
-import get_rewarded from "../../images/get_rewarded.svg";
-import image_top from "../../images/top_image_landing.svg";
-import why_reward from "../../images/why01.svg";
-import why_future from "../../images/why02.svg";
+import getRewarded from "../../images/get_rewarded.svg";
+import imageTop from "../../images/top_image_landing.svg";
+import whyReward from "../../images/why01.svg";
+import whyFuture from "../../images/why02.svg";
 import forwardArrow from "../../images/arrow_forward.svg";
 import { Link } from "react-router-dom";
 
@@ -41,7 +38,7 @@ const Landing = () => (
         <Link to="/registration" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</Link>
       </div>
       <div className="d-none col-xlg-7 d-xl-block landing_page__waste">
-        <img src={image_top} alt="image_top_img" />
+        <img src={imageTop} alt="image_top_img" />
       </div>
       <div className="d-block d-sm-none landing_page__create_account__mobile">
         <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
@@ -53,7 +50,7 @@ const Landing = () => (
     <section className="row d-none d-sm-flex landing_page__get_rewarded">
       <div className="row get_rewarded">
         <div className="d-none col-xlg-7 d-xl-block images-left left_side">
-        <img src={get_rewarded} alt="get_rewarded_img" />
+        <img src={getRewarded} alt="get_rewarded_img" />
         </div>
         <div className="d-none col-xlg-5 d-xl-block words right_side_up">
           <h1>Get Rewarded for it</h1>
@@ -70,14 +67,14 @@ const Landing = () => (
               It is about the <span>APPRECIATION</span></h3>
         </div>
         <div className="d-none col-xlg-7 d-xl-block images_right left_side">
-        <img src={why_reward} alt="why01_img" />
+        <img src={whyReward} alt="why01_img" />
         </div>
       </div>
     </section>
     <section className="row d-none d-sm-flex landing_page__get_rewarded">
       <div className="row get_rewarded">
         <div className="d-none col-xlg-5 d-xl-block words left_side">
-          <img src={why_future} alt="why02_img" />
+          <img src={whyFuture} alt="why02_img" />
         </div>
         <div className="d-none col-xlg-7 d-xl-block words right_side_special">
           <h3> It is <span>NOT</span> about <span>NOW</span><br/> 

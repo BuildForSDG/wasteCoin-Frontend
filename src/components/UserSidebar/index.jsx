@@ -17,11 +17,9 @@ import Auth from "../Auth";
 
 
 function UserSidebar(props) {
-  const [userName] = useSelector((state) => state.loginUser.user_details);
-
   return (
     <nav className="sidenav">
-      <p className="welcome-text">Welcome ! {userName.firstname}</p>
+      <p className="welcome-text d-none d-lg-block">Welcome !</p>
       <ul className="navbar-nav mr-auto sidenav-ul">
         <li className={`nav-item sidenav-li ${props.headerTitle === "Dashboard" ? "side_memu_active" : ""}`}>
           <Link to="/dashboard" className="nav-link" href="#how_it_works"><img src={home} className="logo" alt="Home-logo" /><span className="sidenav-span">&nbsp;Home</span></Link>
