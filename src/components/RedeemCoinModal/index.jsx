@@ -1,13 +1,22 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { ToastContainer } from "react-toastify";
 import { useForm } from "react-hook-form";
 
 import wasteCoinSys from "../../images/waste_coin_sys.svg";
 import "./redeemCoinModal.css";
-
-
+import { redeemCoin } from "../../redux/reducers/wallet";
 
 function RedeemCoinModal(props) {
-  const { handleSubmit, register, errors } = useForm();
+  const dispatch = useDispatch();
+  const { handleSubmit, register, setValue, errors } = useForm();
+
+  const onSubmit = (data) => {
+    const coinDetail = {
+      amount: data.amount
+    };
+    dispatch(redeemCoin(coinDetail, props.history));
+  };
 
   const renderErrorText = (message) => {
     return (
@@ -26,41 +35,42 @@ function RedeemCoinModal(props) {
             </button>
           </div>
           <div className="modal-body">
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-group">
-              <div className="flex-adj">
-                <div className="input-group-prepend">
-                  <div className="input-group-text">
-                  <img src={wasteCoinSys} alt="coin_logo" width="25" />
+                <div className="flex-adj">
+                  <div className="input-group-prepend">
+                    <div className="input-group-text">
+                      <img src={wasteCoinSys} alt="coin_logo" width="25" />
+                    </div>
                   </div>
-                </div>
-                <input type="text"
-                  placeholder="Amount"
-                  className="form-control-btn"
-                  name="amount"
-                  ref={register({
-                    required: true,
-                  })}
-                />
+                  <input type="text"
+                    placeholder="Amount"
+                    className="form-control-btn"
+                    name="amount"
+                    onChange={(value) => setValue("cashequivalent", `${props.exchangeRate * value.target.value}`)}
+                    ref={register({
+                      required: true,
+                    })}
+                  />
                 </div>
                 {renderErrorText(errors.amount)}
               </div>
               <div className="form-group">
-              <div className="flex-adj">
-                <div className="input-group-prepend">
-                  <div className="input-group-text">
-                  <span className="naira_sign">&#8358;</span>
+                <div className="flex-adj">
+                  <div className="input-group-prepend">
+                    <div className="input-group-text">
+                      <span className="naira_sign">&#8358;</span>
+                    </div>
                   </div>
-                </div>
-                <input type="text"
-                  placeholder="Cash Equivalent"
-                  className="form-control-login"
-                  name="cashequivalent"
-                  readOnly
-                  ref={register({
-                    required: true,
-                  })}
-                />
+                  <input type="text"
+                    placeholder="Cash Equivalent"
+                    className="form-control-login"
+                    readOnly
+                    name="cashequivalent"
+                    ref={register({
+                      required: true,
+                    })}
+                  />
                 </div>
                 {renderErrorText(errors.cashequivalent)}
               </div>
@@ -69,19 +79,18 @@ function RedeemCoinModal(props) {
                   placeholder="Incentive"
                   className="form-control-login"
                   name="incentive"
-                  ref={register({
-                    required: true,
-                  })}
+                  ref={register}
                 />
                 {renderErrorText(errors.incentive)}
               </div>
+              <div className="modal-footer redeem_modal_footer">
+                <button type="submit" className="btn btn-primary">Redeem Coin</button>
+              </div>
             </form>
-          </div>
-          <div className="modal-footer redeem_modal_footer">
-            <button type="button" className="btn btn-primary">Redeem Coin</button>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

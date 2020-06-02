@@ -1,12 +1,6 @@
 import React from "react";
 
 import "./footer.css";
-import twitter from "../../images/twitter.svg";
-import ph from "../../images/ph.svg";
-import github from "../../images/github.svg";
-import reddit from "../../images/reddit.svg";
-import bitcointalk from "../../images/bitcointalk.svg";
-import blockStack from "../../images/blockstack.svg";
 
 
 const Footer = () => (
