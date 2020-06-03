@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 
@@ -8,15 +8,15 @@ const Footer = () => (
     <div className="col-sm-6 col-md-4 mb-3 footer__about">
       <h2>About</h2>
       <ul>
-        <li>Our Team</li>
-        <li>Privacy Policy</li>
+      <Link to="/ourteam"><li>Our Team</li></Link>
+      <Link to="/privatepolicy"><li>Privacy Policy</li></Link>
       </ul>
     </div>
 
     <div className="col-sm-6 mb-3 col-md-4 footer__contact">
       <h2>Contact</h2>
       <p>hello@wastecoinwallet.com</p>
-      <p>FAQ</p>
+      <Link to="/faq"><p>FAQ</p></Link>
       
     </div>
 

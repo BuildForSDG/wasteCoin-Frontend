@@ -1,0 +1,14 @@
+.private_policy{
+  width:50%; margin:auto; padding:10px; text-align:justify;
+  /* background-color: #30C1B0; */
+}
+.p_strong{
+  color:#38C8E8;
+}
+.private_policy h2 {
+  color:#30C1B0;
+}
+.private_policy h2,h3,h1,p{
+  display: block;
+  width:100%;
+}
