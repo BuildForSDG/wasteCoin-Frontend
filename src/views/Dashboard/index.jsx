@@ -11,6 +11,7 @@ import pieIcon from "../../images/pie.svg";
 import refreshIcon from "../../images/refresh_icon.svg";
 
 import { fetchDashboard } from "../../redux/reducers/dashboard";
+import { fetchProfile } from "../../redux/reducers/profile";
 import Spinner from "../../components/Loader";
 
 
@@ -31,6 +32,7 @@ function Dashboard(props) {
 
   useEffect(() => {
     dispatch(fetchDashboard(props.history));
+    dispatch(fetchProfile(props.history));
   }, [dispatch, props.history]);
 
   const renderBoard = (result, index) => {

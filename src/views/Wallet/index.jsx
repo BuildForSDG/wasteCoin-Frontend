@@ -33,7 +33,6 @@ function Wallet(props) {
     );
   };
 
-
   return (
     <div className="wallet container pt-4">
       <div className="card p-5 shadow-sm wallet_overview">

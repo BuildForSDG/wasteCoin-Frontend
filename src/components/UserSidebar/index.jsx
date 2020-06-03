@@ -17,9 +17,11 @@ import Auth from "../Auth";
 
 
 function UserSidebar(props) {
+  const userDetails = useSelector((state) => state.profile.userDetails);
+
   return (
     <nav className="sidenav">
-      <p className="welcome-text d-none d-lg-block">Welcome !</p>
+      <p className="welcome-text d-none d-lg-block">Welcome ! { (userDetails && userDetails.user_details && userDetails.user_details.first_name) ||  ""}</p>
       <ul className="navbar-nav mr-auto sidenav-ul">
         <li className={`nav-item sidenav-li ${props.headerTitle === "Dashboard" ? "side_memu_active" : ""}`}>
           <Link to="/dashboard" className="nav-link" href="#how_it_works"><img src={home} className="logo" alt="Home-logo" /><span className="sidenav-span">&nbsp;Home</span></Link>

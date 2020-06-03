@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import { useForm } from "react-hook-form";
-
-
-import edit from "../../images/edit.svg";
+import { useDispatch, useSelector } from "react-redux";
 
 import "./profile.css";
+import edit from "../../images/edit.svg";
 import BiodataModal from "../../components/BiodataModal";
 import AccountUpdateModal from "../../components/AccountUpdateModal";
 import SecurityUpdateModal from "../../components/SecurityUpdateModal";
+import { fetchProfile } from "../../redux/reducers/profile";
 
-function Profile() {
+
+function Profile(props) {
+  const dispatch = useDispatch();
+  const profileDetails = useSelector((state) => state.profile.userDetails);
   const { handleSubmit, register, errors } = useForm();
+
+  const userDetails = profileDetails && profileDetails.user_details;
+
+  useEffect(() => {
+    dispatch(fetchProfile(props.history));
+  }, [dispatch, props.history]);
 
   const onSubmit = (data) => data;
 
@@ -38,73 +47,59 @@ function Profile() {
                   <input type="text"
                     placeholder="First Name"
                     className="form-control-login"
+                    readOnly
+                    defaultValue={(userDetails && userDetails.first_name )|| ""}
                     name="firstname"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
+                  {renderErrorText(errors.firstname)}
                 </div>
                 <div className="form-group">
                   <input type="text"
                     placeholder="Email Address"
+                    readOnly
                     className="form-control-login"
+                    defaultValue={(userDetails && userDetails.email )|| ""}
                     name="email"
-                    ref={register({
-                      required: "Required",
-                      pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                        message: "invalid email address"
-                      }
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
                 <div className="form-group">
                   <input type="text"
                     placeholder="Address"
+                    readOnly
                     className="form-control-login"
+                    defaultValue={(userDetails && userDetails.address )|| ""}
                     name="address"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
               </div>
               <div className="col-sm-12 col-md-6">
                 <div className="form-group">
                   <input type="text"
                     placeholder="Last Name"
+                    readOnly
                     className="form-control-login"
+                    defaultValue={(userDetails && userDetails.last_name )|| ""}
                     name="lastname"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
                 <div className="form-group">
                   <input type="text"
                     placeholder="Phone Number"
+                    readOnly
                     className="form-control-login"
+                    defaultValue={(userDetails && userDetails.phone_number )|| ""}
                     name="phonenumber"
-                    ref={register({
-                      required: true,
-                    })}
                   />
                   {renderErrorText(errors.email_phone)}
                 </div>
                 <div className="form-group">
                   <input type="text"
                     placeholder="State"
+                    readOnly
                     className="form-control-login"
+                    defaultValue={(userDetails && userDetails.state )|| ""}
                     name="state"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
               </div>
             </div>
@@ -129,6 +124,7 @@ function Profile() {
                   <input type="text"
                     placeholder="Account Name"
                     className="form-control-login"
+                    readOnly
                     name="accountname"
                     ref={register({
                       required: true,
@@ -140,6 +136,7 @@ function Profile() {
                   <input type="text"
                     placeholder="Account Number"
                     className="form-control-login"
+                    readOnly
                     name="accountnumber"
                     ref={register({
                       required: true,
@@ -151,6 +148,7 @@ function Profile() {
                   <input type="text"
                     placeholder="Bank Name"
                     className="form-control-login"
+                    readOnly
                     name="bankname"
                     ref={register({
                       required: true,
@@ -176,6 +174,7 @@ function Profile() {
                   <input type="text"
                     placeholder="Old Password"
                     className="form-control-login"
+                    readOnly
                     name="oldpassword"
                     ref={register({
                       required: true,
@@ -187,6 +186,7 @@ function Profile() {
                   <input type="text"
                     placeholder="New Password"
                     className="form-control-login"
+                    readOnly
                     name="firstname"
                     ref={register({
                       required: true,
@@ -198,6 +198,7 @@ function Profile() {
                   <input type="text"
                     placeholder="Re-Enter New Password"
                     className="form-control-login"
+                    readOnly
                     name="enternewpasword"
                     ref={register({
                       required: true,
@@ -210,7 +211,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <BiodataModal id="biodataModal" />
+      <BiodataModal userDetails={userDetails} id="biodataModal" />
       <AccountUpdateModal id="accountModal" />
       <SecurityUpdateModal id="securityModal" />
     </div>
