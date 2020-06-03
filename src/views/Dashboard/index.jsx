@@ -31,7 +31,7 @@ function Dashboard(props) {
 
   useEffect(() => {
     dispatch(fetchDashboard(props.history));
-  }, [dispatch]);
+  }, [dispatch, props.history]);
 
   const renderBoard = (result, index) => {
     return (
