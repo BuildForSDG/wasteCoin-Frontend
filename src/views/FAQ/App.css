@@ -99,10 +99,6 @@
   border-top: 1px solid #f3f8ff;
 }
 
-.faq .card .card-body p {
-  margin-bottom: 14px;
-}
-
 @media (max-width: 991px) {
   .faq {
     margin-bottom: 30px;
@@ -112,4 +108,8 @@
     line-height: 26px;
     margin-top: 10px;
   }
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
 }

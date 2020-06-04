@@ -5,10 +5,6 @@
   text-align: justify;
 }
 
-.p_strong {
-  color: #38c8e8;
-}
-
 .private_policy h2 {
   color: #30c1b0;
 }
@@ -19,4 +15,8 @@ h1,
 p {
   display: block;
   width: 100%;
+}
+
+.p_strong {
+  color: #38c8e8;
 }
