@@ -176,7 +176,7 @@ const Landing = () => (
           </div>
           <div className="row left-padding">
             <div className="contact_form_container_half pull-left">
-              <div className="pull-left">
+              <div >
                 <h3 className="h3">Email</h3>
                 <div className="form-group text-left">
                   <input type="email"
@@ -190,7 +190,7 @@ const Landing = () => (
               
             </div>
             <div className="contact_form_container_half pull-right">
-              <div className="pull-left">
+              <div >
                 <h3 className="h3">Phone Number (Optional)</h3>
                 <div className="form-group text-left">
                   <input type="number"
