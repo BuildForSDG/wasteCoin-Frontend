@@ -90,7 +90,7 @@ img {
 #team .team-list > ul > li.active::after {
   color: #3e6edf;
   content: "";
-  font-family: fontawesome;
+  font-family: fontawesome, sans-serif;
   margin-top: -10px;
   position: absolute;
   right: 0;
