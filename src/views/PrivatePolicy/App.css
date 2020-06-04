@@ -1,7 +1,7 @@
 .private_policy {
-  width: 50%; 
-  margin: auto; 
-  padding: 10px; 
+  width: 50%;
+  margin: auto;
+  padding: 10px;
   text-align: justify;
 }
 
@@ -13,9 +13,9 @@
   color: #30c1b0;
 }
 
-.private_policy h2, 
-h3, 
-h1, 
+.private_policy h2,
+h3,
+h1,
 p {
   display: block;
   width: 100%;
