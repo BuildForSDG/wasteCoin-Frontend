@@ -29,7 +29,7 @@
 }
 
 .faq {
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
@@ -41,7 +41,7 @@
 }
 
 .faq .card .card-header {
-  padding: 0px;
+  padding: 0;
   border: none;
   background: none;
   -webkit-transition: all 0.3s ease 0s;
@@ -58,9 +58,7 @@
 .faq .card .card-header .faq-title {
   width: 100%;
   text-align: left;
-  padding: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px 30px 20px 30px;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 1px;
@@ -71,8 +69,6 @@
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .faq .card .card-header .faq-title .badge {
