@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import faq_img from "../../images/faq.svg";
+import faqImg from "../../images/faq.svg";
 
 const Faq = () => (
   <div className="landing_page">
@@ -8,7 +8,7 @@ const Faq = () => (
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <img src={faq_img}  alt="faq_img" />
+              <img src={faqImg}  alt="faq_img" />
             </div>
             <div className="col-md-6">
                 <div className="faq-title text-center pb-3">

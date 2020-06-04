@@ -2,30 +2,36 @@
 img {
   max-width: 100%;
 }
+
 #team {
   padding: 150px 0;
 }
+
 #fun-fact, #team {
-  /* background: #f6f7fe; */
   background: #2ad2be10;
 }
+
 #team .team-section-text {
   padding-top: 70px;
 }
+
 .section-count, .section-title {
-  font-family: 'Josefin Sans',sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
+
 .section-count {
   height: 120px;
   overflow: hidden;
   font-weight: 100;
 }
-.section-count>span {
+
+.section-count >  span {
   color: #e6e9f4;
   display: block;
   font-size: 220px;
   line-height: .7em;
 }
+
 .section-title {
   color: #38c8e8;
   font-size: 48px;
@@ -33,97 +39,98 @@ img {
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-.section-text>p {
+
+.section-text >  p {
   margin-bottom: 15px;
 }
 
 #team {
-  padding: 150px 0
+  padding: 150px 0;
 }
 
 #team .team-section-text {
-  padding-top: 70px
+  padding-top: 70px;
 }
 
 #team .team-single {
-  border: 8px solid #30C1B040;
+  border: 8px solid #30c1b040;
   margin: 0 auto;
   padding: 15px;
   width: 320px;
-  display: none
+  display: none;
 }
 
 #team .team-single.active {
-  display: block
+  display: block;
 }
 
-#team .team-list>ul {
+#team .team-list >  ul {
   list-style: none;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
-#team .team-list>ul>li {
+#team .team-list > ul > li {
   position: relative;
-  margin: 15px 0
+  margin: 15px 0;
 }
 
-#team .team-list>ul>li:first-child {
-  margin-top: 0
+#team .team-list > ul > li:first-child {
+  margin-top: 0;
 }
 
-#team .team-list>ul>li:last-child {
-  margin-bottom: 0
+#team .team-list > ul > li:last-child {
+  margin-bottom: 0;
 }
 
-#team .team-list>ul>li.active>a>figure:before {
+#team .team-list > ul > li.active > a > figure:before {
   position: absolute;
   content: '';
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(131, 158, 226, .7)
+  background: rgba(131, 158, 226, .7);
 }
 
-#team .team-list>ul>li.active::after {
+#team .team-list > ul > li.active::after {
   color: #3e6edf;
   content: "";
   font-family: fontawesome;
   margin-top: -10px;
   position: absolute;
   right: 0;
-  top: 50%
+  top: 50%;
 }
 
-#team .team-list>ul>li>a>figure {
+#team .team-list > ul > li > a > figure {
   border-radius: 50%;
   height: 100px;
   overflow: hidden;
   width: 100px;
-  position: relative
+  position: relative;
 }
 
-#team .team-info>h4 {
+#team .team-info > h4 {
   color: #3a3a3a;
   font-size: 16px;
   margin-bottom: 5px;
   margin-top: 20px;
-  text-align: center
+  text-align: center;
 }
 
 #team .team-img {
-  position: relative
+  position: relative;
 }
 
-#team .team-img>img {
+#team .team-img > img {
   width: 100%;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s
+  transition: .3s;
 }
 
-#team .team-social>ul {
+#team .team-social > ul {
   bottom: 0;
   list-style: none;
   margin: 0 0 0 20px;
@@ -133,10 +140,10 @@ img {
   opacity: 0;
   -webkit-transition: .5s;
   -o-transition: .5s;
-  transition: .5s
+  transition: .5s;
 }
 
-#team .team-social>ul>li>a {
+#team .team-social > ul > li > a {
   border-radius: 50%;
   color: #3e6edf;
   display: block;
@@ -149,14 +156,14 @@ img {
   width: 40px;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s
+  transition: .3s;
 }
-#team .team-social>ul>li>a:hover {
+#team .team-social > ul > li > a:hover {
   background: #3e6edf;
-  color: #fff
+  color: #fff;
 }
 
-#team .team-social>ul>li>a::after {
+#team .team-social > ul > li > a::after {
   border: 1px solid #dee3f4;
   border-radius: 50%;
   content: "";
@@ -164,74 +171,83 @@ img {
   left: -5px;
   position: absolute;
   top: -5px;
-  width: 50px
+  width: 50px;
 }
 
-#team .team-single:hover .team-img>img {
-  margin-left: -70px
+#team .team-single:hover .team-img > img {
+  margin-left: -70px;
 }
 
-#team .team-single:hover .team-social>ul {
+#team .team-single:hover .team-social > ul {
   opacity: 1;
-  right: 0
+  right: 0;
 }
 
 @media screen and (max-width:1200px) {
   #team {
-      padding: 120px 0
+      padding: 120px 0;
   }
 }
 
 @media screen and (max-width:991px) {
   #team {
-      padding: 90px 0
+      padding: 90px 0;
   }
+
   #team .col-md-5.col-sm-12.pull-right {
-      float: none!important
+      float: none;
   }
+
   #team .team-section-text {
       padding-bottom: 50px;
-      padding-top: 0
+      padding-top: 0;
   }
 }
 
 @media screen and (max-width:767px) {
   #team {
-      padding: 60px 0
+      padding: 60px 0;
   }
+
   #team .team-section-text {
       padding-bottom: 30px;
-      padding-top: 0
+      padding-top: 0;
   }
+
   #team .team-single {
       margin: 30px auto 0;
       overflow: hidden;
       padding: 10px;
-      width: 100%
+      width: 100%;
   }
+
   #team .team-list {
-      text-align: center
+      text-align: center;
   }
-  #team .team-list>ul>li {
-      position: relative
+
+  #team .team-list > ul > li {
+      position: relative;
   }
-  #team .team-list>ul>li>a>figure {
+
+  #team .team-list > ul > li > a > figure {
       height: 65px;
       position: relative;
-      width: 65px
+      width: 65px;
   }
-  #team .team-list>ul>li.active::after {
+
+  #team .team-list > ul > li.active::after {
       margin-top: 10px;
       position: absolute;
-      right: 30px!important;
+      right: 30px;
       top: 100%;
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
-      transform: rotate(90deg)
+      transform: rotate(90deg);
   }
-  #team .team-list>ul>li {
+
+  #team .team-list > ul > li {
       display: inline-block;
-      margin: 15px 0
+      margin: 15px 0;
   }
 }
 
@@ -243,11 +259,13 @@ img {
 }
 }
 @media screen and (max-width: 991px){
-#team {
-    padding: 90px 0;
-}
-#team .team-section-text {
-  padding-bottom: 50px;
-  padding-top: 0;
-}
+  #team {
+      padding: 90px 0;
+  }
+
+  #team .team-section-text {
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
 }
