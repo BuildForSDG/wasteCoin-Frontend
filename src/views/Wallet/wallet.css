@@ -23,16 +23,6 @@
   font-size: 12px;
 }
 
-.redeem_coin_icon {
-  position: absolute;
-  top: 9rem;
-  right: 11rem;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  z-index: 1000;
-}
-
 @media screen and (max-width: 760px) {
   .wallet {
     padding: 0 15px;
@@ -40,8 +30,19 @@
   }
 
   .redeem_coin_icon {
-    top: 8rem;
-    right: 4rem;
+    font-size: 11px;
+  }
+
+  .wallet_overview > p {
+    font-size: 10px;
+  }
+
+  .wallet_overview > h6 {
+    font-size: 11px;
+  }
+
+  .account-container {
+    padding: 12px;
   }
 
   p {

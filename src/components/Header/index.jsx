@@ -16,7 +16,7 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <a className="nav-link" href="#how_it_works"> How it works</a>
+            <a className="nav-link" href="/#how_it_works"> How it works</a>
           </li>
           <li className="nav-item">
             <Link to="/registration" className="nav-link">Register</Link>
@@ -25,7 +25,7 @@ function Header() {
             <Link to="/login" className="nav-link">Login</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#contact_us">Contact Us</a>
+            <a className="nav-link" href="/#contact_us">Contact Us</a>
           </li>
         </ul>
         <ul className="navbar-nav my-2 my-lg-0">

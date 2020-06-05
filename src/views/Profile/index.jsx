@@ -1,5 +1,4 @@
 import React, { useEffect }  from "react";
-import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 
 import "./profile.css";
@@ -13,21 +12,13 @@ import { fetchProfile } from "../../redux/reducers/profile";
 function Profile(props) {
   const dispatch = useDispatch();
   const profileDetails = useSelector((state) => state.profile.userDetails);
-  const { handleSubmit, register, errors } = useForm();
 
   const userDetails = profileDetails && profileDetails.user_details;
+  const accountDetails = profileDetails && profileDetails.account_information;
 
   useEffect(() => {
     dispatch(fetchProfile(props.history));
   }, [dispatch, props.history]);
-
-  const onSubmit = (data) => data;
-
-  const renderErrorText = (message) => {
-    return (
-      message && <span className="error"> {message.message}</span>
-    );
-  };
 
   return (
     <div className="profile container pt-4">
@@ -40,7 +31,7 @@ function Profile(props) {
             </button>
           </div>
           <hr />
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form >
             <div className="row p-3">
               <div className="col-sm-12 col-md-6">
                 <div className="form-group">
@@ -51,7 +42,6 @@ function Profile(props) {
                     defaultValue={(userDetails && userDetails.first_name )|| ""}
                     name="firstname"
                   />
-                  {renderErrorText(errors.firstname)}
                 </div>
                 <div className="form-group">
                   <input type="text"
@@ -68,6 +58,16 @@ function Profile(props) {
                     readOnly
                     className="form-control-login"
                     defaultValue={(userDetails && userDetails.address )|| ""}
+                    name="address"
+                  />
+                </div>
+
+                <div className="form-group">
+                  <input type="text"
+                    placeholder="Address"
+                    readOnly
+                    className="form-control-login"
+                    defaultValue={(userDetails && userDetails.LGA )|| ""}
                     name="address"
                   />
                 </div>
@@ -90,7 +90,6 @@ function Profile(props) {
                     defaultValue={(userDetails && userDetails.phone_number )|| ""}
                     name="phonenumber"
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
                 <div className="form-group">
                   <input type="text"
@@ -99,6 +98,15 @@ function Profile(props) {
                     className="form-control-login"
                     defaultValue={(userDetails && userDetails.state )|| ""}
                     name="state"
+                  />
+                </div>
+                <div className="form-group">
+                  <input type="text"
+                    placeholder="gender"
+                    readOnly
+                    className="form-control-login"
+                    defaultValue={(userDetails && userDetails.gender )|| ""}
+                    name="gender"
                   />
                 </div>
               </div>
@@ -119,42 +127,33 @@ function Profile(props) {
                 </button>
               </div>
               <hr />
-              <form onSubmit={handleSubmit(onSubmit)} className="account_form">
+              <form className="account_form">
                 <div className="form-group">
                   <input type="text"
                     placeholder="Account Name"
                     className="form-control-login"
                     readOnly
+                    defaultValue={(accountDetails && accountDetails.account_name )|| ""}
                     name="accountname"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
                 <div className="form-group">
                   <input type="text"
                     placeholder="Account Number"
                     className="form-control-login"
                     readOnly
+                    defaultValue={(accountDetails && accountDetails.account_number )|| ""}
                     name="accountnumber"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
                 <div className="form-group">
                   <input type="text"
                     placeholder="Bank Name"
                     className="form-control-login"
                     readOnly
+                    defaultValue={(accountDetails && accountDetails.bank_name )|| ""}
                     name="bankname"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
               </form>
             </div>
@@ -169,30 +168,22 @@ function Profile(props) {
                 </button>
               </div>
               <hr />
-              <form onSubmit={handleSubmit(onSubmit)} className="account_form">
+              <form className="account_form">
                 <div className="form-group">
                   <input type="text"
                     placeholder="Old Password"
                     className="form-control-login"
                     readOnly
                     name="oldpassword"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
                 <div className="form-group">
                   <input type="text"
                     placeholder="New Password"
                     className="form-control-login"
                     readOnly
-                    name="firstname"
-                    ref={register({
-                      required: true,
-                    })}
+                    name="newpassword"
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
                 <div className="form-group">
                   <input type="text"
@@ -200,20 +191,16 @@ function Profile(props) {
                     className="form-control-login"
                     readOnly
                     name="enternewpasword"
-                    ref={register({
-                      required: true,
-                    })}
                   />
-                  {renderErrorText(errors.email_phone)}
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-      <BiodataModal userDetails={userDetails} id="biodataModal" />
-      <AccountUpdateModal id="accountModal" />
-      <SecurityUpdateModal id="securityModal" />
+      <BiodataModal userDetails={userDetails} id="biodataModal" {...props} />
+      <AccountUpdateModal accountDetails={accountDetails} id="accountModal" {...props} />
+      <SecurityUpdateModal id="securityModal" {...props} />
     </div>
   );
 }

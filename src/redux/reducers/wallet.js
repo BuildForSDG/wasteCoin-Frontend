@@ -55,7 +55,7 @@ export const redeemCoin = (coinDetails, history) => async (dispatch) => {
     }
 
     dispatch(redeemCoinAsync(res.data.amount));
-    history.push("/wallet");
+    return toast.success(res.data.message);
 
   } catch (error) {
     errorOperation(history);

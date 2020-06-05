@@ -1,9 +1,18 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { ToastContainer } from "react-toastify";
+import { useDispatch } from "react-redux";
 
+import { changeAccountDetails } from "../../redux/reducers/profile";
 
 function AccountUpdateModal(props) {
-  const { handleSubmit, register, errors } = useForm();
+  const {accountDetails} = props;
+  const dispatch = useDispatch();
+  const { register, errors, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    dispatch(changeAccountDetails(data, props.history));
+  };
 
   const renderErrorText = (message) => {
     return (
@@ -22,48 +31,52 @@ function AccountUpdateModal(props) {
             </button>
           </div>
           <div className="modal-body">
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-group">
                 <input type="text"
                   placeholder="Account Name"
                   className="form-control-login"
-                  name="accountname"
+                  defaultValue={(accountDetails && accountDetails.account_name) || ""}
+                  name="account_name"
                   ref={register({
                     required: true,
                   })}
                 />
-                {renderErrorText(errors.email_phone)}
+                {renderErrorText(errors.account_name)}
               </div>
               <div className="form-group">
                 <input type="text"
                   placeholder="Account Number"
                   className="form-control-login"
-                  name="accountnumber"
+                  name="account_number"
+                  defaultValue={(accountDetails && accountDetails.account_number) || ""}
                   ref={register({
                     required: true,
                   })}
                 />
-                {renderErrorText(errors.email_phone)}
+                {renderErrorText(errors.account_number)}
               </div>
               <div className="form-group">
                 <input type="text"
                   placeholder="Bank Name"
                   className="form-control-login"
-                  name="bankname"
+                  name="bank_name"
+                  defaultValue={(accountDetails && accountDetails.bank_name) || ""}
                   ref={register({
                     required: true,
                   })}
                 />
-                {renderErrorText(errors.email_phone)}
+                {renderErrorText(errors.bank_name)}
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" className="btn btn-primary">Save changes</button>
               </div>
             </form>
           </div>
-          <div className="modal-footer">
-            <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" className="btn btn-primary">Save changes</button>
-          </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
