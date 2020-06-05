@@ -1,10 +1,24 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
+import { ToastContainer } from "react-toastify";
+
+import { changeBiodata } from "../../redux/reducers/profile";
 
 
 function BiodataModal(props) {
-  const { handleSubmit, register, errors } = useForm();
-  const {userDetails} = props;
+  const dispatch = useDispatch();
+  const { register, errors, handleSubmit } = useForm();
+  const { userDetails } = props;
+
+  const onSubmit = (data) => {
+    const userDetails = {
+      address: data.address,
+      state: data.state,
+      lga: data.lga
+    };
+    dispatch(changeBiodata(userDetails, props.history));
+  };
 
   const renderErrorText = (message) => {
     return (
@@ -23,7 +37,7 @@ function BiodataModal(props) {
             </button>
           </div>
           <div className="modal-body">
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-group">
                 <input type="text"
                   placeholder="First Name"
@@ -69,6 +83,19 @@ function BiodataModal(props) {
               </div>
               <div className="form-group">
                 <input type="text"
+                  placeholder="Phone Number"
+                  className="form-control-login"
+                  defaultValue={(userDetails && userDetails.phone_number) || ""}
+                  name="phonenumber"
+                  readOnly
+                  ref={register({
+                    required: true,
+                  })}
+                />
+                {renderErrorText(errors.phone_number)}
+              </div>
+              <div className="form-group">
+                <input type="text"
                   placeholder="Address"
                   className="form-control-login"
                   defaultValue={(userDetails && userDetails.address) || ""}
@@ -81,11 +108,10 @@ function BiodataModal(props) {
               </div>
               <div className="form-group">
                 <input type="text"
-                  placeholder="Phone Number"
+                  placeholder="LGA"
                   className="form-control-login"
-                  defaultValue={(userDetails && userDetails.phone_number) || ""}
-                  name="phonenumber"
-                  readOnly
+                  defaultValue={(userDetails && userDetails.LGA) || ""}
+                  name="lga"
                   ref={register({
                     required: true,
                   })}
@@ -104,14 +130,15 @@ function BiodataModal(props) {
                 />
                 {renderErrorText(errors.state)}
               </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" className="btn btn-primary">Save changes</button>
+              </div>
             </form>
-          </div>
-          <div className="modal-footer">
-            <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" className="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

@@ -29,7 +29,7 @@ export const fetchDashboard = (history) => async (dispatch) => {
       return toast.error(res.data.message);
     }
 
-    dispatch(dashboardAsync(res.data.data[0]));
+    dispatch(dashboardAsync(res.data.data));
 
   } catch (error) {
     errorOperation(history);

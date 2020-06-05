@@ -1,0 +1,35 @@
+.verify_btn {
+  height: 42px;
+  width: 70%;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #38c8e8;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verify_btn > div {
+  margin-right: 10px;
+}
+
+.btn_width {
+  padding: 0 20%;
+}
+
+.resend-text {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .btn_width {
+    padding: 0;
+  }
+}
+
+.input_field input {
+  background: rgba(56, 200, 232, 0.2);
+}
+

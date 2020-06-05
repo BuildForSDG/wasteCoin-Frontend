@@ -18,152 +18,153 @@ import whyFuture from "../../images/why02.svg";
 import forwardArrow from "../../images/arrow_forward.svg";
 import { Link } from "react-router-dom";
 
-const Landing = () => (
-  <div className="landing_page">
-    <section className="row section_styling">
-      <div className="col-xs-12 col-xl-5 landing_page__create_account">
-        <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
-        <div className="desktop">
+function Landing() {
+  return (
+    <div className="landing_page">
+      <section className="row section_styling">
+        <div className="col-xs-12 col-xl-5 landing_page__create_account">
+          <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
+          <div className="desktop">
             <h1>Join the Waste Revolution</h1>
-            <h3>At Wastecoin, we believe proper waste <br /> 
-            collection, disposal is possible and <br/>
-          <span>EVERYONE'S RESPONSIBILITY</span>
+            <h3>At Wastecoin, we believe proper waste <br />
+            collection, disposal is possible and <br />
+              <span>EVERYONE'S RESPONSIBILITY</span>
             </h3>
-        </div>
-        <div className="mobile">
+          </div>
+          <div className="mobile">
             <h1>Hey there!</h1>
-            <h3>Get rewards for disposing waste <br/>Properly</h3>
-            <br/><br/><p>Join us, its Free</p>
+            <h3>Get rewards for disposing waste <br />Properly</h3>
+            <br /><br /><p>Join us, its Free</p>
+          </div>
+          <Link to="/registration" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</Link>
         </div>
-        <Link to="/registration" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</Link>
-      </div>
-      <div className="d-none col-xlg-7 d-xl-block landing_page__waste">
-        <img src={imageTop} alt="image_top_img" />
-      </div>
-      <div className="d-block d-sm-none landing_page__create_account__mobile">
-        <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
-        <p><Link to="/registration">Create an account</Link></p>
-      </div>
-      
-    </section>
+        <div className="d-none col-xlg-7 d-xl-block landing_page__waste">
+          <img src={imageTop} alt="image_top_img" />
+        </div>
+        <div className="d-block d-sm-none landing_page__create_account__mobile">
+          <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
+          <p><Link to="/registration">Create an account</Link></p>
+        </div>
 
-    <section className="row d-none d-sm-flex landing_page__get_rewarded">
-      <div className="row get_rewarded">
-        <div className="d-none col-xlg-7 d-xl-block images-left left_side">
-        <img src={getRewarded} alt="get_rewarded_img" />
-        </div>
-        <div className="d-none col-xlg-5 d-xl-block words right_side_up">
-          <h1>Get Rewarded for it</h1>
-          <h3> We also believe Everyone should be <span>REWARDED</span><br/> 
+      </section>
+
+      <section className="row d-none d-sm-flex landing_page__get_rewarded">
+        <div className="row get_rewarded">
+          <div className="d-none col-xlg-7 d-xl-block images-left left_side">
+            <img src={getRewarded} alt="get_rewarded_img" />
+          </div>
+          <div className="d-none col-xlg-5 d-xl-block words right_side_up">
+            <h1>Get Rewarded for it</h1>
+            <h3> We also believe Everyone should be <span>REWARDED</span><br />
               for such good waste disposal habit.</h3>
+          </div>
         </div>
-      </div>
-    </section>
-    <section className="row d-none d-sm-flex landing_page__get_rewarded">
-      <div className="row get_rewarded">
-        <div className="d-none col-xlg-5 d-xl-block words right_side">
-          <h1>Why?</h1>
-          <h3> It is <span>NOT</span> about the <span>REWARD</span><br/> 
+      </section>
+      <section className="row d-none d-sm-flex landing_page__get_rewarded">
+        <div className="row get_rewarded">
+          <div className="d-none col-xlg-5 d-xl-block words right_side">
+            <h1>Why?</h1>
+            <h3> It is <span>NOT</span> about the <span>REWARD</span><br />
               It is about the <span>APPRECIATION</span></h3>
+          </div>
+          <div className="d-none col-xlg-7 d-xl-block images_right left_side">
+            <img src={whyReward} alt="why01_img" />
+          </div>
         </div>
-        <div className="d-none col-xlg-7 d-xl-block images_right left_side">
-        <img src={whyReward} alt="why01_img" />
-        </div>
-      </div>
-    </section>
-    <section className="row d-none d-sm-flex landing_page__get_rewarded">
-      <div className="row get_rewarded">
-        <div className="d-none col-xlg-5 d-xl-block words left_side">
-          <img src={whyFuture} alt="why02_img" />
-        </div>
-        <div className="d-none col-xlg-7 d-xl-block words right_side_special">
-          <h3> It is <span>NOT</span> about <span>NOW</span><br/> 
-                It is  about the <span>FUTURE</span><br/> 
+      </section>
+      <section className="row d-none d-sm-flex landing_page__get_rewarded">
+        <div className="row get_rewarded">
+          <div className="d-none col-xlg-5 d-xl-block words left_side">
+            <img src={whyFuture} alt="why02_img" />
+          </div>
+          <div className="d-none col-xlg-7 d-xl-block words right_side_special">
+            <h3> It is <span>NOT</span> about <span>NOW</span><br />
+                It is  about the <span>FUTURE</span><br />
                   It is about preserving the <span>ECOSYSTEM</span></h3>
-        </div>
-      </div>
-    </section>
-    <section className="row section_styling_how d-none d-sm-flex" id="how_it_works">
-    <div className="how"><h1 className="h1">How it works?</h1></div>
-      <div className="cont_how">
-        <div className="row signup">
-          <div className="d-none col-xlg-5 d-xl-block word_left">
-            <h1 className="h1">Sign up</h1>
-            <h3 className="h3"> <span className="span">CREATE</span> a Wastecoin account with ease<br/> 
-                <span className="span">ENSURE</span> you provide accurate and correct data <br/>to avoid future payment issues</h3>
-          </div>
-          <div className="d-none col-xlg-7 d-xl-block image_right">
-          <img src={signup} alt="signup_img" />
           </div>
         </div>
-        <div className="row signin">
-          <div className="d-none col-xlg-7 d-xl-block image_right">
-          <img src={signin} alt="signin_img" />
+      </section>
+      <section className="row section_styling_how d-none d-sm-flex" id="how_it_works">
+        <div className="how"><h1 className="h1">How it works?</h1></div>
+        <div className="cont_how">
+          <div className="row signup">
+            <div className="d-none col-xlg-5 d-xl-block word_left">
+              <h1 className="h1">Sign up</h1>
+              <h3 className="h3"> <span className="span">CREATE</span> a Wastecoin account with ease<br />
+                <span className="span">ENSURE</span> you provide accurate and correct data <br />to avoid future payment issues</h3>
+            </div>
+            <div className="d-none col-xlg-7 d-xl-block image_right">
+              <img src={signup} alt="signup_img" />
+            </div>
           </div>
-          <div className="d-none col-xlg-5 d-xl-block word_right">
-            <h1 className="h1">Sign in</h1>
-            <h3 className="h3"> Sign in with your <span className="span">PHONE NUMBER</span> and<br/> 
+          <div className="row signin">
+            <div className="d-none col-xlg-7 d-xl-block image_right">
+              <img src={signin} alt="signin_img" />
+            </div>
+            <div className="d-none col-xlg-5 d-xl-block word_right">
+              <h1 className="h1">Sign in</h1>
+              <h3 className="h3"> Sign in with your <span className="span">PHONE NUMBER</span> and<br />
                 password details</h3>
+            </div>
           </div>
-        </div>
-        <div className="row collect_waste">
-          <div className="d-none col-xlg-5 d-xl-block word_left">
-            <h1 className="h1">Collect Waste</h1>
-            <h3 className="h3">Consciously mine waste (collect and gather)<br/>your
-                <span className="span"> PET bottles and cartons</span> used in your home, 
-                <br/>at work or where ever you are,
+          <div className="row collect_waste">
+            <div className="d-none col-xlg-5 d-xl-block word_left">
+              <h1 className="h1">Collect Waste</h1>
+              <h3 className="h3">Consciously mine waste (collect and gather)<br />your
+                <span className="span"> PET bottles and cartons</span> used in your home,
+                <br />at work or where ever you are,
                 in your spare time</h3>
+            </div>
+            <div className="d-none col-xlg-7 d-xl-block image_right">
+              <img src={collect} alt="collect_img" />
+            </div>
           </div>
-          <div className="d-none col-xlg-7 d-xl-block image_right">
-          <img src={collect} alt="collect_img" />
-          </div>
-        </div>
-        <div className="row deliver">
-          <div className="d-none col-xlg-7 d-xl-block image_right">
-          <img src={deliver} alt="deliver_img" />
-          </div>
-          <div className="d-none col-xlg-5 d-xl-block word_left">
-            <h1 className="h1">Deliever to a Wastecoin Agent</h1>
-            <h3 className="h3"> Our Agents are around you. Deliever to them<br/> 
+          <div className="row deliver">
+            <div className="d-none col-xlg-7 d-xl-block image_right">
+              <img src={deliver} alt="deliver_img" />
+            </div>
+            <div className="d-none col-xlg-5 d-xl-block word_left">
+              <h1 className="h1">Deliever to a Wastecoin Agent</h1>
+              <h3 className="h3"> Our Agents are around you. Deliever to them<br />
                 You can go to them or they can come to you</h3>
+            </div>
           </div>
-        </div>
-        <div className="row paid">
-          <div className="d-none col-xlg-5 d-xl-block word_left">
-            <h1 className="h1">Get paid in Wastecoin</h1>
-            <h3 className="h3">Our agents weights the Waste you deliever and<br/>
+          <div className="row paid">
+            <div className="d-none col-xlg-5 d-xl-block word_left">
+              <h1 className="h1">Get paid in Wastecoin</h1>
+              <h3 className="h3">Our agents weights the Waste you deliever and<br />
                 pay you the equivalent amount in Wastecoin.
-                <br/>This is paid into your Wastecoin wallet</h3>
+                <br />This is paid into your Wastecoin wallet</h3>
+            </div>
+            <div className="d-none col-xlg-7 d-xl-block image_right">
+              <img src={paid} alt="paid_img" />
+            </div>
           </div>
-          <div className="d-none col-xlg-7 d-xl-block image_right">
-          <img src={paid} alt="paid_img" />
-          </div>
-        </div>
-        <div className="row redeem">
-          <div className="d-none col-xlg-7 d-xl-block image_right">
-          <img src={wasteCoinWallet} alt="redeem_img" />
-          </div>
-          <div className="d-none col-xlg-5 d-xl-block word_left">
-            <h1 className="h1">Accumulate/Redeem Wastecoins</h1>
-            <h3 className="h3"> On getting paid, you can choose to <br/> 
+          <div className="row redeem">
+            <div className="d-none col-xlg-7 d-xl-block image_right">
+              <img src={wasteCoinWallet} alt="redeem_img" />
+            </div>
+            <div className="d-none col-xlg-5 d-xl-block word_left">
+              <h1 className="h1">Accumulate/Redeem Wastecoins</h1>
+              <h3 className="h3"> On getting paid, you can choose to <br />
                 accumulate it and let your wastecoin grow significantly
-                <br/> as you would keep your money in a bank.<br/>
+                <br /> as you would keep your money in a bank.<br />
                 OR
-                <br/> Redeem the Wastecoins in exchange for rewards such as 
-                <br/> Cash, Data subscription, Recharge cards amongst other incentives</h3>
+                <br /> Redeem the Wastecoins in exchange for rewards such as
+                <br /> Cash, Data subscription, Recharge cards amongst other incentives</h3>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section className="row d-none d-sm-flex contact d-none">
-    <div className="how" id="contact_us">
-      <h1 className="h1">Contact us</h1>
-      <h3 className="h3">Tell us how we can be of assistance and we'll get in touch shortly </h3>
-    </div>
-      <form className="form-control reg-form contact_form">
+      </section>
+      <section className="row d-none d-sm-flex contact d-none">
+        <div className="how" id="contact_us">
+          <h1 className="h1">Contact us</h1>
+          <h3 className="h3">Tell us how we can be of assistance and we'll get in touch shortly </h3>
+        </div>
+        <form className="form-control reg-form contact_form">
           <div className="row">
             <div className="contact_form_container">
-            <h3 className="h3">Full Name</h3>
+              <h3 className="h3">Full Name</h3>
               <div className="form-group text-left">
                 <input type="text"
                   className="form-control-contact"
@@ -187,7 +188,7 @@ const Landing = () => (
 
                 </div>
               </div>
-              
+
             </div>
             <div className="contact_form_container_half pull-right">
               <div >
@@ -201,12 +202,12 @@ const Landing = () => (
 
                 </div>
               </div>
-              
+
             </div>
           </div>
           <div className="row">
             <div className="contact_form_container">
-            <h3 className="h3">Message</h3>
+              <h3 className="h3">Message</h3>
               <div className="form-group text-left">
                 <textarea type="text"
                   className="form-control-contact-text"
@@ -218,30 +219,31 @@ const Landing = () => (
             </div>
           </div>
           <div className="col-md-6 submit-contact-div">
-          <button type="submit" className="contact-submit" >
-            Send Message
+            <button type="submit" className="contact-submit" >
+              Send Message
             </button>
-        </div>
-      </form>
-    </section>
-    <section className="row d-none d-sm-flex partners d-none">
-      <div className="how"><h1 className="h1">Our Partners</h1></div>
-      <div className="row partner_column">
-            <div className="col-md-3">
-              <img src={facebook} alt="facebook_img" />
-            </div>
-            <div className="col-md-3">
-              <img src={goingGreen} alt="goinggreen_img" />
-            </div>
-            <div className="col-md-3">
-              <img src={andela} alt="andela_img" />
-            </div>
-            <div className="col-md-3">
-              <img src={wastePoint} alt="wastepoint_img" />
-            </div>
           </div>
-    </section>
-  </div>
-);
+        </form>
+      </section>
+      <section className="row d-none d-sm-flex partners d-none">
+        <div className="how"><h1 className="h1">Our Partners</h1></div>
+        <div className="row partner_column">
+          <div className="col-md-3">
+            <img src={facebook} alt="facebook_img" />
+          </div>
+          <div className="col-md-3">
+            <img src={goingGreen} alt="goinggreen_img" />
+          </div>
+          <div className="col-md-3">
+            <img src={andela} alt="andela_img" />
+          </div>
+          <div className="col-md-3">
+            <img src={wastePoint} alt="wastepoint_img" />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
 
 export default Landing;

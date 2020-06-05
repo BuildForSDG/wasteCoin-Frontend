@@ -6,8 +6,10 @@ import AuthLayout from "./components/Layout/Auth";
 import SignIn from "./views/SignIn";
 import SignUp from "./views/SignUp";
 import ResetpasswordPage from "./views/ResetPassword";
-import AppLayout from "./components/Layout/AppLayout";
 import Dashboard from "./views/Dashboard";
+import Verify from "./views/Verify";
+import ResendOTP from "./views/ResendOTP";
+import AppLayout from "./components/Layout/AppLayout";
 import "./index.css";
 import Profile from "./views/Profile";
 import OurTeam from "./views/OurTeam";
@@ -55,9 +57,21 @@ const routing = () => (
           </AuthLayout>
         } />
 
-        <Route path="/resetpassword" render={(props) =>
+        <Route path="/reset-password" render={(props) =>
           <AuthLayout>
             <ResetpasswordPage {...props} />
+          </AuthLayout>
+        } />
+
+        <Route path="/verify" render={(props) =>
+          <AuthLayout>
+            <Verify {...props} />
+          </AuthLayout>
+        } />
+
+        <Route path="/resend-otp" render={(props) =>
+          <AuthLayout>
+            <ResendOTP {...props} />
           </AuthLayout>
         } />
         

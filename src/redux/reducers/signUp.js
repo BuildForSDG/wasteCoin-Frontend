@@ -24,7 +24,7 @@ export const addNewUser = (userDetails, history) => async (dispatch) => {
   localStorage.setItem("token", res.data.token);
   dispatch(addNewAsync(res.data));
   toast.success(res.data.message);
-  history.push("/login");
+  history.push("/verify");
 };
 
 

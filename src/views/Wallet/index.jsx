@@ -35,20 +35,31 @@ function Wallet(props) {
 
   return (
     <div className="wallet container pt-4">
-      <div className="card p-5 shadow-sm wallet_overview">
-        <p>ACCOUNT OVERVIEW</p>
-        <div className="wallet_overview_coin">
-          <img src={wasteCoinSys} alt="coin_logo" width="25" />
-          <p className="mb-0 ml-2">{walletDetails.current_balance}</p>
+      <div className="card account-container p-md-5 shadow-sm">
+      <div className="row">
+        <div className="col">
+          <div className=" wallet_overview">
+            <p>ACCOUNT OVERVIEW</p>
+            <div className="wallet_overview_coin">
+              <img src={wasteCoinSys} alt="coin_logo" width="25" />
+              <p className="mb-0 ml-2">{walletDetails.current_balance}</p>
+            </div>
+            <h6>Current Balance</h6>
+          </div>
         </div>
-        <h6>Current Balance</h6>
+        <div className="col">
+          <div className="text-right">
+            <p className="mb-0 redeem_coin_icon">Redeem Coins</p>
+            <button type="button" className="btn btn-light redeem_icon" data-toggle="modal" data-target="#redeem_coin">
+              <img src={redeemCoins} alt="coin_logo" width="60"/>
+            </button>
+          </div>
+
+        </div>
       </div>
-      <div className="redeem_coin_icon text-center">
-        <p className="mb-0">Redeem Coins</p>
-        <button type="button" className="btn btn-light redeem_icon" data-toggle="modal" data-target="#redeem_coin">
-          <img src={redeemCoins} alt="coin_logo" width="60" />
-        </button>
       </div>
+
+
       <div className="card mt-5 shadow-sm pr-2">
         <div className="transaction-header">
           <p className="text-center">Transaction History</p>
@@ -90,7 +101,7 @@ function Wallet(props) {
         id="redeem_coin"
         history={props.history}
         exchangeRate={dashboardDetails.exchangeRate}
-        />
+      />
     </div>
   );
 }
