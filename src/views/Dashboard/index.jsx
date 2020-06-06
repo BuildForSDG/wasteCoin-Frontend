@@ -23,10 +23,13 @@ function Dashboard(props) {
   };
 
   const dashboardDetails = useSelector((state) => state.dashboard);
+  const userDetails = useSelector((state) => state.profile.userDetails);
+
+  const roleTitle = userDetails && userDetails.user_details && userDetails.user_details.role === "user";
   
   if (dashboardDetails.summary) {
-    summaryVariable.mined = dashboardDetails.summary.mined;
-    summaryVariable.unMined = dashboardDetails.summary.unMined;
+    summaryVariable.mined = dashboardDetails.summary.totalWasteCoinMinedPercentage;
+    summaryVariable.unMined = dashboardDetails.summary.totalWasteCoinUnMinedPercentage;
   }
 
   useEffect(() => {
@@ -160,7 +163,7 @@ function Dashboard(props) {
         </div>
       </div>
 
-      <div className="card shadow-sm">
+      {roleTitle && (<div className="card shadow-sm">
         <div className="p-3 text-center leader_header">
           <p>Leader's Board</p>
         </div>
@@ -175,7 +178,7 @@ function Dashboard(props) {
           </div>
           {dashboardDetails.leaderBoard && dashboardDetails.leaderBoard.map((result, index) => renderBoard(result, index))}
         </div>
-      </div>
+      </div>)}
     </div>
   );
 }

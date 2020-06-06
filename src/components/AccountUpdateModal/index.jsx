@@ -35,7 +35,7 @@ function AccountUpdateModal(props) {
               <div className="form-group">
                 <input type="text"
                   placeholder="Account Name"
-                  className="form-control-login"
+                  className="form-control-login text-dark"
                   defaultValue={(accountDetails && accountDetails.account_name) || ""}
                   name="account_name"
                   ref={register({
@@ -47,7 +47,7 @@ function AccountUpdateModal(props) {
               <div className="form-group">
                 <input type="text"
                   placeholder="Account Number"
-                  className="form-control-login"
+                  className="form-control-login text-dark"
                   name="account_number"
                   defaultValue={(accountDetails && accountDetails.account_number) || ""}
                   ref={register({
@@ -59,7 +59,7 @@ function AccountUpdateModal(props) {
               <div className="form-group">
                 <input type="text"
                   placeholder="Bank Name"
-                  className="form-control-login"
+                  className="form-control-login text-dark"
                   name="bank_name"
                   defaultValue={(accountDetails && accountDetails.bank_name) || ""}
                   ref={register({

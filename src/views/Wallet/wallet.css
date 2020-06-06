@@ -23,6 +23,44 @@
   font-size: 12px;
 }
 
+.transaction-body {
+  font-size: 10pt;
+}
+
+.wallet-header-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-body {
+  background-color: rgba(42, 210, 190, 0.05);
+  overflow: scroll;
+}
+
+.table__head {
+  background-color: rgba(56, 200, 232, 0.1);
+}
+
+.wallet_table_coin {
+  display: flex;
+}
+
+.redeem_icon,
+.redeem_icon:hover,
+.redeem_icon:active {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.transaction-header {
+  background-color: rgba(56, 200, 232, 0.4);
+  padding: 10px 10px 0 10px;
+}
+
+.filter-btn {
+  background-color: rgba(56, 200, 232, 0.4);
+}
+
 @media screen and (max-width: 760px) {
   .wallet {
     padding: 0 15px;
@@ -48,35 +86,6 @@
   p {
     text-decoration: none;
   }
-}
-
-.transaction-header {
-  background-color: rgba(56, 200, 232, 0.4);
-  padding: 10px 10px 0 10px;
-}
-
-.wallet-header-input {
-  display: flex;
-  justify-content: space-between;
-}
-
-.transaction-body {
-  background-color: rgba(42, 210, 190, 0.05);
-}
-
-.table__head {
-  background-color: rgba(56, 200, 232, 0.1);
-}
-
-.wallet_table_coin {
-  display: flex;
-}
-
-.redeem_icon,
-.redeem_icon:hover,
-.redeem_icon:active {
-  border-color: transparent;
-  background-color: transparent;
 }
 
 @media screen and (min-width: 1900px) {
