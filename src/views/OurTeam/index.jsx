@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
+import MohammedYayandi from "../../images/yayandi.jpg";
+import MohammedZubairu from "../../images/Zubairu.jpg";
 
 function OurTeam(props) {
   const [selectTeam, setSelectTeam] = useState("aminu");
@@ -57,13 +59,13 @@ function OurTeam(props) {
 
                       <li className={`${selectTeam === "bayero" ? "active" : ""} wow zoomIn`} data-wow-duration="1s" data-wow-delay=".7s"  onClick={() => changeProfile("bayero")}>
                         <a href="#team-1" data-team="team-1">
-                          <figure><img src="http://www.webcoderskull.com/img/team1.png" alt="Mohhammed Bayero"></img></figure>
+                          <figure><img src={MohammedYayandi} alt="Mohhammed Bayero"></img></figure>
                         </a>
                       </li>
 
                       <li className={`${selectTeam === "zubairu" ? "active" : ""} wow zoomIn`} data-wow-duration="1s" data-wow-delay=".9s" onClick={() => changeProfile("zubairu")}>
                         <a href="#team-1" data-team="team-1">
-                          <figure><img src="http://www.webcoderskull.com/img/team4.png" alt="Mohammed Zubairu"  ></img></figure>
+                          <figure><img src={MohammedZubairu} alt="Mohammed Zubairu"  ></img></figure>
                         </a>
                       </li>
 
@@ -136,7 +138,7 @@ function OurTeam(props) {
                   </div>
                   <div id="team-4" className={`team-single ${selectTeam === "bayero" ? "active" : ""}`}>
                     <div className="team-img">
-                      <img src="http://www.webcoderskull.com/img/team1.png" alt=""></img>
+                      <img src={MohammedYayandi} alt=""></img>
                       <div className="team-social">
                         <ul>
                           <li><a href="http://www.github.com/byruzyayandy1/" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
@@ -154,7 +156,7 @@ function OurTeam(props) {
 
                   <div id="team-5" className={`team-single ${selectTeam === "zubairu" ? "active" : ""}`}>
                     <div className="team-img">
-                      <img src="http://www.webcoderskull.com/img/team4.png" alt=""></img>
+                      <img src={MohammedZubairu} alt=""></img>
                       <div className="team-social">
                         <ul>
                           <li><a href="http://www.github.com/moxeey/" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>

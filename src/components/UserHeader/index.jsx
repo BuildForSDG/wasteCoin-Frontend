@@ -11,7 +11,7 @@ function UserHeader(props) {
             <Link to ="/" className="navbar-brand"><img src={wasteLogo} className="logo" alt="logo" /></Link> 
             <h6>{props.headerTitle}</h6> 
             </nav>
-            <div className="dashboard-header text-center">Dashboard</div>
+            <div className="dashboard-header text-center">{props.headerTitle}</div>
         </div>
     );
 }

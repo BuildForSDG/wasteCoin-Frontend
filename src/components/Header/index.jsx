@@ -29,8 +29,8 @@ function Header() {
           </li>
         </ul>
         <ul className="navbar-nav my-2 my-lg-0">
-          <li className="nav-item active">
-            <a className="nav-link" href="##"><img src={googleLogo} className="logo" alt="logo" /> <span className="sr-only">(current)</span></a>
+          <li className="nav-item">
+            <a className="nav-link" href="https://s3.amazonaws.com/gonativeio/static/5edbc58d67540a290b490255/app-release.apk"><img src={googleLogo} className="logo" alt="logo" /> <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item p-2">
             <a className="nav-link" href="##"><img src={appleLogo} className="logo" alt="logo" /></a>
