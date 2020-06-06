@@ -72,9 +72,9 @@ The WasteCoin solution is not just one feasible solution but also inclusive, saf
 *   [React](https://reactjs.org) - Frontend framework used
 *   [Android](https://www.android.com) - Mobile framework used
 ## APK FILE
-[APK ANDROID](https://drive.google.com/file/d/1cIKDHHbNkmpPCrO91jaW2u3MIHfTb2_v/view?usp=sharing)
+[APK ANDROID](https://s3.amazonaws.com/gonativeio/static/5edbc58d67540a290b490255/app-release.apk)
 ## WEBSITE
-[wastecoin](https://dashboard-no-important.netlify.app)
+[wastecoin](https://waste1234.herokuapp.com)
 ## SETUP
 You should have **Python 3.5+** and **git** installed. 
 1.  Clone the repo you've created from the template herein and change into the directory
@@ -144,6 +144,6 @@ First, you can send a mail to [buildforsdg@andela.com](buildforsdg@andela.com) t
 2.  area two (e.g you want people to opt-in and try using your staging app at staging.project-name.com and report any bugs via a form)
 3.  area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
 ## Acknowledgements
-Team -105 wants to explicitly thank [Facebook](https://facebook.com) and [Andela](https://andela.com) for their support and assistance throughout this project. Special shoutout to [Sam Esidem](https://github.com/esidem), [Charles Odili](www.linkedin.com/in/charlesodili), [Amaka Mbaegbu](www.linkedin.com/in/amymbaegbu/) and [Cliff Gor](www.linkedin.com/in/cliff-gor/) for their assitance, patience and availability to help us through our difficulties.
+Team -105 wants to explicitly thank [Facebook](https://facebook.com) and [Andela](https://andela.com) for their support and assistance throughout this project. Special shoutout to [Sam Esidem](https://github.com/esidem), [Charles Odili](www.linkedin.com/in/charlesodili), [Amaka Mbaegbu](www.linkedin.com/in/amymbaegbu/),[Joy Ejiofoh](https://ng.linkedin.com/in/joy-ejiofoh) and [Cliff Gor](www.linkedin.com/in/cliff-gor/) for their assitance, patience and availability to help us through our difficulties.
 ## LICENSE
 MIT

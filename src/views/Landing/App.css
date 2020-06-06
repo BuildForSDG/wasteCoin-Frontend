@@ -241,7 +241,7 @@ h1 {
 
 .right_side {
   padding: 150px 200px 0 0;
-  text-align: right;
+  text-align: left;
 }
 
 .right_side_special {
@@ -307,6 +307,11 @@ h1 {
 }
 
 @media screen and (max-width: 540px) {
+  .landing_page{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
   .landing_page__create_account h3 {
     font-style: normal;
     font-weight: normal;
@@ -331,12 +336,17 @@ h1 {
   }
 
   .landing_page__create_account {
-    padding-left: 25%;
+    padding-left: 2%;
     width: 100%;
   }
 
   .section_styling {
     padding: 18%;
+  }
+
+  .landing_page__create_account__mobile {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
