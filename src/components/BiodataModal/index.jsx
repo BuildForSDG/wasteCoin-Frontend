@@ -44,6 +44,7 @@ function BiodataModal(props) {
                   className="form-control-login"
                   defaultValue={(userDetails && userDetails.first_name) || ""}
                   readOnly
+                  disabled
                   name="firstname"
                   ref={register({
                     required: true,
@@ -57,6 +58,7 @@ function BiodataModal(props) {
                   className="form-control-login"
                   defaultValue={(userDetails && userDetails.last_name) || ""}
                   name="lastname"
+                  disabled
                   readOnly
                   ref={register({
                     required: true,
@@ -70,6 +72,7 @@ function BiodataModal(props) {
                   className="form-control-login"
                   defaultValue={(userDetails && userDetails.email) || ""}
                   name="email"
+                  disabled
                   readOnly
                   ref={register({
                     required: "Required",
@@ -87,6 +90,7 @@ function BiodataModal(props) {
                   className="form-control-login"
                   defaultValue={(userDetails && userDetails.phone_number) || ""}
                   name="phonenumber"
+                  disabled
                   readOnly
                   ref={register({
                     required: true,
@@ -97,7 +101,7 @@ function BiodataModal(props) {
               <div className="form-group">
                 <input type="text"
                   placeholder="Address"
-                  className="form-control-login"
+                  className="form-control-login text-dark"
                   defaultValue={(userDetails && userDetails.address) || ""}
                   name="address"
                   ref={register({
@@ -109,7 +113,7 @@ function BiodataModal(props) {
               <div className="form-group">
                 <input type="text"
                   placeholder="LGA"
-                  className="form-control-login"
+                  className="form-control-login text-dark"
                   defaultValue={(userDetails && userDetails.LGA) || ""}
                   name="lga"
                   ref={register({
@@ -121,7 +125,7 @@ function BiodataModal(props) {
               <div className="form-group">
                 <input type="text"
                   placeholder="State"
-                  className="form-control-login"
+                  className="form-control-login text-dark"
                   defaultValue={(userDetails && userDetails.state) || ""}
                   name="state"
                   ref={register({

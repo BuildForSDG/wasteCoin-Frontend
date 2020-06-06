@@ -14,12 +14,12 @@ function RegistrationPage(props) {
   const dispatch = useDispatch();
   const [isLoadingSpinner, setLoader] = useState(false);
   const { handleSubmit, register, errors, getValues } = useForm();
-  
+
   const isLoadingState = useSelector((state) => state.newUser.isLoading);
-  
+
   useEffect(() => {
     setLoader(isLoadingState);
-  },[isLoadingState]);
+  }, [isLoadingState]);
 
   const onSubmit = (data) => {
     const newUserDetails = {
@@ -84,11 +84,14 @@ function RegistrationPage(props) {
               <input type="phone"
                 className="form-control-login"
                 id="phone"
-                placeholder="Phone Number"
+                placeholder="Phone Number (e.g. 070332211234)"
                 name="phonenumber"
                 ref={register({
                   required: true,
-                  validate: (value) => value.length > 2 || "Please you must enter a name more than  2 digits!"
+                  pattern: {
+                    value: /^[0-9]/i,
+                    message: "invalid phone number"
+                  },
                 })}
               />
               {renderErrorText(errors.phonenumber)}
@@ -189,7 +192,7 @@ function RegistrationPage(props) {
             </div>
 
             <div className="form-group text-left">
-              <input type="text"
+              <select
                 className="form-control-login"
                 id="state"
                 placeholder="State"
@@ -198,12 +201,14 @@ function RegistrationPage(props) {
                   required: true,
                   validate: (value) => value.length > 2 || "Please provide  a valid State!"
                 })}
-              />
+              >
+                <option selected>Lagos</option>
+              </select>
               {renderErrorText(errors.state)}
             </div>
 
             <div className="form-group text-left">
-              <input type="text"
+            <select
                 className="form-control-login"
                 id="country"
                 placeholder="Country"
@@ -212,7 +217,9 @@ function RegistrationPage(props) {
                   required: true,
                   validate: (value) => value.length > 2 || "Please provide  a valid Country!"
                 })}
-              />
+              >
+                <option selected>Nigeria</option>
+              </select>
               {renderErrorText(errors.country)}
             </div>
           </div>
