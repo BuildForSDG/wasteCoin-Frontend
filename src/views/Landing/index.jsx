@@ -17,6 +17,7 @@ import whyReward from "../../images/why01.svg";
 import whyFuture from "../../images/why02.svg";
 import forwardArrow from "../../images/arrow_forward.svg";
 import { Link } from "react-router-dom";
+import googleLogo from "../../images/googlestore.svg";
 
 function Landing() {
   return (
@@ -44,6 +45,8 @@ function Landing() {
         <div className="d-block d-sm-none landing_page__create_account__mobile">
           <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
           <p><Link to="/registration">Create an account</Link></p>
+          <br></br>
+          <a className="nav-link text-center" href="https://s3.amazonaws.com/gonativeio/static/5edbc58d67540a290b490255/app-release.apk"><img src={googleLogo} className="logo" alt="logo" /> <span className="sr-only">(current)</span></a>
         </div>
 
       </section>

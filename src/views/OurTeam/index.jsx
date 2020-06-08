@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import MohammedYayandi from "../../images/yayandi.jpg";
 import MohammedZubairu from "../../images/Zubairu.jpg";
+import AminuIsrael from "../../images/aminu.jpg";
 
 function OurTeam(props) {
   const [selectTeam, setSelectTeam] = useState("aminu");
@@ -41,7 +42,7 @@ function OurTeam(props) {
                     <ul>
                       <li className={`${selectTeam === "aminu" ? "active" : ""} wow zoomIn`} data-wow-duration="1s" data-wow-delay=".1s" onClick={() => changeProfile("aminu")}>
                         <a href="#team-1" data-team="team-1" name="aminu">
-                          <figure><img src="http://www.webcoderskull.com/img/team4.png" alt="Aminu Israel"></img></figure>
+                          <figure><img src={AminuIsrael} alt="Aminu Israel"></img></figure>
                         </a>
                       </li>
 
@@ -86,7 +87,7 @@ function OurTeam(props) {
                 <div className="col-md-9 col-sm-8">
                   <div id="team-1" className={`team-single ${selectTeam === "aminu" ? "active" : ""}`}>
                     <div className="team-img">
-                      <img src="http://www.webcoderskull.com/img/team4.png" alt=""></img>
+                      <img src={AminuIsrael} alt="Aminu Israel"></img>
                       <div className="team-social">
                         <ul>
                           <li><a href="http://www.github.com/AminuIsrael/" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
