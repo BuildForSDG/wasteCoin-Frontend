@@ -111,7 +111,7 @@ function Wallet(props) {
             </tbody>
           </table>
         </div>
-        {(walletDetails.transaction_history && walletDetails.transaction_history.length > 5) && (<Pagination />)}
+        {/* {(walletDetails.transaction_history && walletDetails.transaction_history.length > 5) && (<Pagination />)} */}
       </div>
       <RedeemCoinModal
         id="redeem_coin"

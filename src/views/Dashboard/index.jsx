@@ -164,7 +164,7 @@ function Dashboard(props) {
         <div className="p-3 text-center leader_header">
           <p>Leader's Board</p>
         </div>
-        <div className="leader_label mb-3 pl-sm-3 pl-lg-5">
+        <div className="leader_label pl-sm-3 pl-lg-5">
           <div className="row">
             <div className="col pl-5">
               <p>Miner ID</p>

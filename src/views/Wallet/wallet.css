@@ -34,7 +34,9 @@
 
 .transaction-body {
   background-color: rgba(42, 210, 190, 0.05);
-  overflow: scroll;
+  overflow: auto;
+  height: 49vh;
+  margin-bottom: 50px;
 }
 
 .table__head {
