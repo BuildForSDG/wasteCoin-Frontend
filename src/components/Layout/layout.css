@@ -4,7 +4,7 @@
 
 .main {
   height: 100vh;
-  overflow: scroll;
+  overflow: auto;
 }
 
 @media screen and (max-width: 760px) {

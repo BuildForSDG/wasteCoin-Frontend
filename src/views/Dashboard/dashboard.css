@@ -111,6 +111,10 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  margin-bottom: 50px;
+  height: 40vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .leader_header {
