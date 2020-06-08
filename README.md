@@ -38,32 +38,19 @@ Waste Collection could be community base as community leaders could be rallied a
  if an average Nigerian is made aware of the value of these NBW and would be incentivized. The consciousness would drive good and acceptable waste disposal habit. This can be achieved via this wastecoin project as it would consentiously help to reduce and recycle non-biodegradable waste in accordance to the Sustainable Development Goal no 11, help keep our cities safe and clean and also reward good waste disposal habit.
 
 ## USER JOURNEY
-1.	Malik downloaded the WasteCoin app, 
-2.	So, in his spare time, he collects these NBWs and store them OR
-3.	He was in charge of office cleaning and he discovered that the office or the premises was used for some party with lots of PET bottles on the round. He picks them and store them somewhere safe OR
-4.	He decided to collect these NWBs at home, from his neighbors and environment.
-5.	While on his way to work, he walked into our collection center
-6.	 weighted the waste and dropped it for collection and waited to be credited
-7.	As measured, the equivalent amount of token would be transferred to Malik's account.
-8.	When it is sufficient for exchange, Malik could exchange it for cash or any other palliatives.
-So, let’s say Malik was able to gather and save up to 10,000WC after one month, it could be converted to let’s say N1000 or request for a recharge card worth N1000. 
+Malik downloaded the WasteCoin app. So, in his spare time, he collects these NBWs and store them OR He was in charge of office cleaning and he discovered that the office or the premises was used for some party with lots of PET bottles on the round. He picks them and store them somewhere safe OR He decided to collect these NWBs at home, from his neighbors and environment
+
+While on his way to work, he walked into our collection center weighted the waste and dropped it for collection and waited to be credited. As measured, the equivalent amount of token would be transferred to Malik's account. When it is sufficient for exchange, Malik could exchange it for cash or any other palliatives. So, let’s say Malik was able to gather and save up to 10,000WC after one month, it could be converted to let’s say N1000 or request for a recharge card worth N1000. 
 
 ## UNIQUENESS
-1.	The business model is not limited to any locality in terms of reach to market share reach as anyone with the app can go at his/her convenience to drop NWB and get credited depending on the arrangement agreed upon.
-2.  Gives everyone the opportunity to make conscious and unconscious effort towards saving and protecting the environment
-3. 	It is flexible and can be modified to suit any state waste need in Nigeria 
-4. 	Solid arrangements would have been made with Client companies who needs NBW to collect them at the designated waste centers
+First, the business model is not limited to any locality in terms of reach to market share reach as anyone with the app can go at his/her convenience to drop NWB and get credited depending on the arrangement agreed upon. Secondly - tt gives everyone the opportunity to make conscious and unconscious effort towards saving and protecting the environment. Thirdly, it is flexible and can be modified to suit any state waste need in Nigeria and also solid arrangements would have been made with Client companies who needs NBW to collect them at the designated waste centers
 
 ## ADVANTAGES/STRENGTH 
-1.	Develop a community of waste conscious society
-2.	Reduce waste drastically especially plastic, carton and e-waste 
-3.	There is reward for compliance as every plastic user is rewarded for their plastic accountability as against a few who does not.
-4.	There would be a ready feedstock for companies that used NBW for production of other products
+These include deeveloping a community of waste conscious society; reduce waste drastically especially plastic, carton and e-waste; there is reward for compliance as every plastic user is rewarded for their plastic accountability as against a few who does not; and there would be a ready feedstock for companies that used NBW for production of other products
 
 
 ## CHALLENGES/WEAKNESS 
-1.	How to help Nigerians see the bigger picture of saving the environment that what they more likely get from the project.
-2.	How to fashion out an acceptable yet profitable reward system in terms of valuation for token.
+Firstly, how to help Nigerians see the bigger picture of saving the environment that what they more likely get from the project.and secondly, how to fashion out an acceptable yet profitable reward system in terms of valuation for token.
 
 ## BUSINESS MODEL FLOWCHART
 ![image](https://user-images.githubusercontent.com/26861798/81468257-4b440800-91d6-11ea-85c6-821ca05204b2.png)
@@ -115,11 +102,11 @@ You should have **Python 3.5+** and **git** installed.
      ``
     cd wasteCoin-Frontend
     ``
-4. You should install project dependecies by running:
+3. You should install project dependecies by running:
     ``
     pip install -r requirements.txt
     ``
- 5. Run the Project:  
+4. Run the Project:  
     ``
     python manage.py runserver
     ``
@@ -138,7 +125,7 @@ You should have **Python 3.5+** and **git** installed.
 If this project sounds interesting to you and you'd like to contribute, thank you!
 First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
 1.  This app is about encouraging good waste disposal habit, rewarding such habit and inturn saving the ecosystem. Thus, Ideas on improvement are welcome
-2.  You could help to check out the Web app at https://waste1234.herokuapp.com or download the  [Android Mobile APK](https://s3.amazonaws.com/gonativeio/static/5edbc58d67540a290b490255/app-release.apk) and report any bugs.
+2.  You could help to check out the [Web app](https://waste1234.herokuapp.com) or download the  [Android Mobile APK](https://s3.amazonaws.com/gonativeio/static/5edbc58d67540a290b490255/app-release.apk) and report any bugs.
 
 ## Acknowledgements
 Team -105 wants to explicitly thank [Facebook](https://facebook.com) and [Andela](https://andela.com) for their support and assistance throughout this project. Special shoutout to [Sam Esidem](https://github.com/esidem), [Charles Odili](www.linkedin.com/in/charlesodili), [Amaka Mbaegbu](www.linkedin.com/in/amymbaegbu/), [Joy Ejiofoh](https://ng.linkedin.com/in/joy-ejiofoh) and [Cliff Gor](www.linkedin.com/in/cliff-gor/) for their assitance, patience and availability to help us through our difficulties.
