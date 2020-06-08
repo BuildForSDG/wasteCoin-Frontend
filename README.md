@@ -85,9 +85,9 @@ The WasteCoin solution is not just one feasible solution but also inclusive, saf
 ![image](https://user-images.githubusercontent.com/26861798/81468353-e1782e00-91d6-11ea-8f9e-ce0528e351b3.png)
 
 ## BUILT WITH
-* [Django](https://www.djangoproject.com) - Backend framework used
-* [React](https://reactjs.org) - Frontend framework used
-* [Android](https://www.android.com) - Mobile framework used
+[Django](https://www.djangoproject.com) - Backend framework used
+[React](https://reactjs.org) - Frontend framework used
+[Android](https://www.android.com) - Mobile framework used
 
 ## APK FILE
 [APK ANDROID](https://s3.amazonaws.com/gonativeio/static/5edbc58d67540a290b490255/app-release.apk)
@@ -124,15 +124,15 @@ You should have **Python 3.5+** and **git** installed.
     python manage.py runserver
     ``
   For more information, Please check the Wastecoin Backend DOcumentation [HERE](https://documenter.getpostman.com/view/9033557/SzmmUEYa?version=latest)
-  
+
 ## AUTHORS/TEAM - 105 MEMBERS
- * [Aminu Israel](https://github.com/AminuIsrael) - Backend Developer, UI/UX
- * [Chidozie Managwu](https://github.com/chidoziemanagwu) - Backend Developer, UI/UX
- * [Olarewaju Temitope Albert](https://github.com/albert85) - Frontend Developer
- * [Mohammed Bayero](https://github.com/byruzyayandy1) - Backend Developer, Product Manager
- * [Mohammed Zubairu](https://github.com/moxeey) - Android App Developer/Frontend Developer
- * [Olagunju Daniel](https://github.com/todak2000) - Frontend Developer, Project Manager, UI/UX (TTL)
- * [Stephen Kamau](https://github.com/stephen-kamau) - Team Mentor
+[Aminu Israel](https://github.com/AminuIsrael) - Backend Developer, UI/UX
+[Chidozie Managwu](https://github.com/chidoziemanagwu) - Backend Developer, UI/UX
+[Olarewaju Temitope Albert](https://github.com/albert85) - Frontend Developer
+[Mohammed Bayero](https://github.com/byruzyayandy1) - Backend Developer, Product Manager
+[Mohammed Zubairu](https://github.com/moxeey) - Android App Developer/Frontend Developer
+[Olagunju Daniel](https://github.com/todak2000) - Frontend Developer, Project Manager, UI/UX (TTL)
+[Stephen Kamau](https://github.com/stephen-kamau) - Team Mentor
 
 ## CONTRIBUTING
 If this project sounds interesting to you and you'd like to contribute, thank you!
