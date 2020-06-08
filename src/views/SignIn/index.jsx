@@ -65,7 +65,7 @@ function SignIn(props) {
           </button>
         <div className="d-flex justify-content-between mt-3 sign_in__info">
           <Link to="/registration">Create Account</Link>
-          <Link to="/reset-password">Forget passowrd?</Link>
+          <Link to="/send-reset-password-code">Forget passowrd?</Link>
         </div>
       </form>
       <ToastContainer />

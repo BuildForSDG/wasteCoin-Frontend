@@ -1,6 +1,20 @@
+import jwt from "jwt-decode";
+
 class Auth {
   constructor() {
-    this.authenticated = false;
+    const token = localStorage.getItem("token");
+    if (token) {
+      try {
+        const jwtDecode = token && jwt(token);
+        if (jwtDecode.validated && token && (jwtDecode.exp > (new Date().getTime() / 1000))) {
+          this.authenticated = true;
+        } else {
+          this.authenticated = false;
+        }
+      } catch (error) {
+        this.authenticated = false;
+      }
+    }
   }
 
   login(cb) {

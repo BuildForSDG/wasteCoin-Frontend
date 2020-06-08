@@ -89,7 +89,7 @@ function RegistrationPage(props) {
                 ref={register({
                   required: true,
                   pattern: {
-                    value: /^[0-9]/i,
+                    value: /((^090)([23589]))|((^070)([1-9]))|((^080)([2-9]))|((^081)([0-9]))(\d{7})/i,
                     message: "invalid phone number"
                   },
                 })}
@@ -197,12 +197,13 @@ function RegistrationPage(props) {
                 id="state"
                 placeholder="State"
                 name="state"
+                defaultValue="Lagos"
                 ref={register({
                   required: true,
                   validate: (value) => value.length > 2 || "Please provide  a valid State!"
                 })}
               >
-                <option selected>Lagos</option>
+                <option>Lagos</option>
               </select>
               {renderErrorText(errors.state)}
             </div>
@@ -213,12 +214,13 @@ function RegistrationPage(props) {
                 id="country"
                 placeholder="Country"
                 name="country"
+                defaultValue="Nigeria"
                 ref={register({
                   required: true,
                   validate: (value) => value.length > 2 || "Please provide  a valid Country!"
                 })}
               >
-                <option selected>Nigeria</option>
+                <option>Nigeria</option>
               </select>
               {renderErrorText(errors.country)}
             </div>

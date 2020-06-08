@@ -88,26 +88,3 @@
   }
 }
 
-@media screen and (min-width: 1900px) {
-  .redeem_coin_icon {
-    position: absolute;
-    top: 9rem;
-    right: 24rem;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    z-index: 1000;
-  }
-}
-
-@media screen and (min-width: 2000px) {
-  .redeem_coin_icon {
-    position: absolute;
-    top: 9rem;
-    right: 42rem;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    z-index: 1000;
-  }
-}

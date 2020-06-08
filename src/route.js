@@ -6,6 +6,7 @@ import AuthLayout from "./components/Layout/Auth";
 import SignIn from "./views/SignIn";
 import SignUp from "./views/SignUp";
 import ResetpasswordPage from "./views/ResetPassword";
+import SendResetPasswordCode from "./views/SendResetPasswordCode";
 import Dashboard from "./views/Dashboard";
 import Verify from "./views/Verify";
 import ResendOTP from "./views/ResendOTP";
@@ -57,7 +58,13 @@ const routing = () => (
           </AuthLayout>
         } />
 
-        <Route path="/reset-password" render={(props) =>
+        <Route exact path="/send-reset-password-code" render={(props) =>
+          <AuthLayout>
+            <SendResetPasswordCode {...props} />
+          </AuthLayout>
+        } />
+
+        <Route exact path="/reset-password" render={(props) =>
           <AuthLayout>
             <ResetpasswordPage {...props} />
           </AuthLayout>

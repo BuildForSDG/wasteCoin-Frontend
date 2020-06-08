@@ -1,0 +1,12 @@
+.flex-adj {
+  display: flex;
+}
+
+.naira_sign {
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.redeem_modal_footer {
+  justify-content: center;
+}

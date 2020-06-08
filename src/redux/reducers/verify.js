@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-import { RESEND_USER_OTP, VERIFY_REGISTERED_USER, PAGE_LOADING, PAGE_LOADED } from "./constant";
+import { RESET_PASSWORD, RECEIVE_PASSWORD_RESET_CODE, RESEND_USER_OTP, VERIFY_REGISTERED_USER, PAGE_LOADING, PAGE_LOADED } from "./constant";
 import { isLoading, isLoaded } from "../util";
 
 const verifyUserAsync = (response) => ({
@@ -11,6 +11,16 @@ const verifyUserAsync = (response) => ({
 
 const resendOtpAsync = (response) => ({
   type: RESEND_USER_OTP,
+  payload: response
+});
+
+const sendResetCodeAsync = (response) => ({
+  type: RECEIVE_PASSWORD_RESET_CODE,
+  payload: response
+});
+
+const resetPasswordAsync = (response) => ({
+  type: RESET_PASSWORD,
   payload: response
 });
 
@@ -46,6 +56,43 @@ export const resendOtp = (userDetails, history) => async (dispatch) => {
 
   dispatch(resendOtpAsync(res.data));
   history.push("/verify");
+  return toast.success(res.data.message);
+  
+};
+
+export const sendResetCode = (userPhoneNumber, history) => async (dispatch) => {
+  dispatch(isLoading());
+
+  const res = await axios
+    .post(`${process.env.REACT_APP_BACKEND_API_URL}/password_reset`, userPhoneNumber);
+
+  dispatch(isLoaded());
+
+  if (res.data.error !== "0") {
+    return toast.error(res.data.message);
+  }
+
+  dispatch(sendResetCodeAsync(res.data));
+  localStorage.setItem("token", res.data.token);
+  history.push("/reset-password");
+  return toast.success(res.data.message);
+  
+};
+
+export const resetPassword = (userDetails, history) => async (dispatch) => {
+  dispatch(isLoading());
+
+  const res = await axios
+    .post(`${process.env.REACT_APP_BACKEND_API_URL}/password_change?token=${localStorage.getItem("token")}`, userDetails);
+
+  dispatch(isLoaded());
+
+  if (res.data.error !== "0") {
+    return toast.error(res.data.message);
+  }
+
+  dispatch(resetPasswordAsync(res.data));
+  history.push("/login");
   return toast.success(res.data.message);
   
 };
