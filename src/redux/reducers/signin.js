@@ -20,6 +20,10 @@ export const loginUser = (userDetails, history) => async (dispatch) => {
   dispatch(isLoaded());
 
   if (res.data.error !== "0") {
+    localStorage.setItem("token", res.data.token);
+    if(res.data.message === "User is not verified"){
+      history.push("/verify");
+    }
     return toast.error(res.data.message);
   }
 

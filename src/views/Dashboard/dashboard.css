@@ -47,7 +47,7 @@
   font-size: 12px;
 }
 
-.exchange_section > h6 {
+.exchange_section h6 {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -162,5 +162,6 @@
 
   .set_min_height {
     min-height: 10rem;
+    margin-bottom: 3.5rem;
   }
 }

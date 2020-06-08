@@ -37,7 +37,7 @@ function Profile(props) {
                 <div className="form-group">
                   <input type="text"
                     placeholder="First Name"
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     readOnly
                     defaultValue={(userDetails && userDetails.first_name )|| ""}
                     name="firstname"
@@ -47,7 +47,7 @@ function Profile(props) {
                   <input type="text"
                     placeholder="Email Address"
                     readOnly
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     defaultValue={(userDetails && userDetails.email )|| ""}
                     name="email"
                   />
@@ -56,7 +56,7 @@ function Profile(props) {
                   <input type="text"
                     placeholder="Address"
                     readOnly
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     defaultValue={(userDetails && userDetails.address )|| ""}
                     name="address"
                   />
@@ -66,7 +66,7 @@ function Profile(props) {
                   <input type="text"
                     placeholder="Address"
                     readOnly
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     defaultValue={(userDetails && userDetails.LGA )|| ""}
                     name="address"
                   />
@@ -77,7 +77,7 @@ function Profile(props) {
                   <input type="text"
                     placeholder="Last Name"
                     readOnly
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     defaultValue={(userDetails && userDetails.last_name )|| ""}
                     name="lastname"
                   />
@@ -86,7 +86,7 @@ function Profile(props) {
                   <input type="text"
                     placeholder="Phone Number"
                     readOnly
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     defaultValue={(userDetails && userDetails.phone_number )|| ""}
                     name="phonenumber"
                   />
@@ -95,7 +95,7 @@ function Profile(props) {
                   <input type="text"
                     placeholder="State"
                     readOnly
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     defaultValue={(userDetails && userDetails.state )|| ""}
                     name="state"
                   />
@@ -104,7 +104,7 @@ function Profile(props) {
                   <input type="text"
                     placeholder="gender"
                     readOnly
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     defaultValue={(userDetails && userDetails.gender )|| ""}
                     name="gender"
                   />
@@ -131,7 +131,7 @@ function Profile(props) {
                 <div className="form-group">
                   <input type="text"
                     placeholder="Account Name"
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     readOnly
                     defaultValue={(accountDetails && accountDetails.account_name )|| ""}
                     name="accountname"
@@ -140,7 +140,7 @@ function Profile(props) {
                 <div className="form-group">
                   <input type="text"
                     placeholder="Account Number"
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     readOnly
                     defaultValue={(accountDetails && accountDetails.account_number )|| ""}
                     name="accountnumber"
@@ -149,7 +149,7 @@ function Profile(props) {
                 <div className="form-group">
                   <input type="text"
                     placeholder="Bank Name"
-                    className="form-control-login"
+                    className="form-control-login text-dark"
                     readOnly
                     defaultValue={(accountDetails && accountDetails.bank_name )|| ""}
                     name="bankname"

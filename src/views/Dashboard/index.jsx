@@ -14,7 +14,6 @@ import { fetchDashboard } from "../../redux/reducers/dashboard";
 import { fetchProfile } from "../../redux/reducers/profile";
 import Spinner from "../../components/Loader";
 
-
 function Dashboard(props) {
   const dispatch = useDispatch();
   const summaryVariable = {
@@ -24,8 +23,6 @@ function Dashboard(props) {
 
   const dashboardDetails = useSelector((state) => state.dashboard);
   const userDetails = useSelector((state) => state.profile.userDetails);
-
-  const roleTitle = userDetails && userDetails.user_details && userDetails.user_details.role === "user";
   
   if (dashboardDetails.summary) {
     summaryVariable.mined = dashboardDetails.summary.totalWasteCoinMinedPercentage;
@@ -60,11 +57,11 @@ function Dashboard(props) {
               :
               (<div className="row pt-3">
                 <div className="col-sm-12 pl-xs-3 allocated_section">
-                  <div className="allocated_section_header pl-3 d-flex justify-content-between pr-4 align-items-center">
+                  <div className="allocated_section_header pl-3 d-flex justify-content-between pr-3 align-items-center">
                     <h6>ALLOCATED WASTECOINS</h6>
-                    <div className="col-md-4 d-none d-md-block text-center">
                       <img src={wasteCoinIcon} alt="coin_Icon" width="50" />
-                    </div>
+                    {/* <div className="col-md-4 d-none d-md-block text-right">
+                    </div> */}
                 </div>
                 <hr />
                   <div className="waste_coin_details pl-3">
@@ -84,11 +81,11 @@ function Dashboard(props) {
               :
               (<div className="row pt-3">
                 <div className="col-sm-12 pl-xs-3 exchange_section">
-                  <div className="allocated_section_header pl-3 d-flex justify-content-between pr-4 align-items-center">
+                  <div className="allocated_section_header pl-3 d-flex justify-content-between pr-3 align-items-center">
                     <h6>EXCHANGE RATE</h6>
-                    <div className="col-md-4 d-none d-md-block text-center">
                       <img src={exchangeRateIcon} alt="coin_Icon" width="50" />
-                    </div>
+                    {/* <div className="col-md-4 d-none d-md-block text-center">
+                    </div> */}
                   </div>
                   <hr />
                   <div className="exchange_details pl-3">
@@ -139,7 +136,7 @@ function Dashboard(props) {
           </div>
         </div>
         <div className="col">
-          <div className="card shadow-sm mb-4 adjust_padding set_min_height">
+          <div className="card shadow-sm adjust_padding set_min_height">
             {!dashboardDetails ? <Spinner className="text-center pt-5" width={100} height={100} spinnerType="Circles" color="#2ad2be" visible={true} />
               :
               (<div className="row pt-3">
@@ -163,7 +160,7 @@ function Dashboard(props) {
         </div>
       </div>
 
-      {roleTitle && (<div className="card shadow-sm">
+      {(userDetails && userDetails.user_details && (userDetails.user_details.role === "user")) && (<div className="card shadow-sm mt-4">
         <div className="p-3 text-center leader_header">
           <p>Leader's Board</p>
         </div>
