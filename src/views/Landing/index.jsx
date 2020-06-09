@@ -1,4 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { ToastContainer } from "react-toastify";
+
 import "./App.css";
 import wasteCoinWallet from "../../images/waste_coin_wallet.svg";
 import wastePoint from "../../images/waste_point.svg";
@@ -16,10 +21,37 @@ import imageTop from "../../images/top_image_landing.svg";
 import whyReward from "../../images/why01.svg";
 import whyFuture from "../../images/why02.svg";
 import forwardArrow from "../../images/arrow_forward.svg";
-import { Link } from "react-router-dom";
 import googleLogo from "../../images/googlestore.svg";
+import { contactUs } from "../../redux/reducers/verify";
+import Spinner from "../../components/Loader";
 
 function Landing() {
+  const dispatch = useDispatch();
+  const { handleSubmit, register, errors, setValue } = useForm();
+
+  const onSubmit = (data) => {
+    dispatch(contactUs(data)).then(() => {
+      setValue("full_name", "");
+      setValue("email", "");
+      setValue("phone_number", "");
+      setValue("message", "");
+    });
+  };
+
+  const renderErrorText = (message) => {
+    return (
+      message && <span className="error"> {message.message}</span>
+    );
+  };
+
+  const [isLoadingSpinner, setLoader] = useState(false);
+  const isLoadingState = useSelector((state) => state.verify.isLoading);
+
+
+  useEffect(() => {
+    setLoader(isLoadingState);
+  }, [isLoadingState]);
+
   return (
     <div className="landing_page">
       <section className="row section_styling">
@@ -164,7 +196,7 @@ function Landing() {
           <h1 className="h1">Contact us</h1>
           <h3 className="h3">Tell us how we can be of assistance and we'll get in touch shortly </h3>
         </div>
-        <form className="form-control reg-form contact_form">
+        <form className="form-control reg-form contact_form" onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
             <div className="contact_form_container">
               <h3 className="h3">Full Name</h3>
@@ -172,8 +204,12 @@ function Landing() {
                 <input type="text"
                   className="form-control-contact"
                   id="fullName"
-                  name="fullName"
+                  name="full_name"
+                  ref={register({
+                    required: true,
+                  })}
                 />
+                {renderErrorText(errors.full_name)}
 
               </div>
             </div>
@@ -187,7 +223,15 @@ function Landing() {
                     className="form-control-contact"
                     id="email"
                     name="email"
+                    ref={register({
+                      required: true,
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                        message: "invalid email address"
+                      }
+                    })}
                   />
+                  {renderErrorText(errors.email)}
 
                 </div>
               </div>
@@ -200,9 +244,15 @@ function Landing() {
                   <input type="number"
                     className="form-control-contact"
                     id="phoneNumber"
-                    name="phoneNumber"
+                    name="phone_number"
+                    ref={register({
+                      pattern: {
+                        value: /((^090)([23589]))|((^070)([1-9]))|((^080)([2-9]))|((^081)([0-9]))(\d{7})/i,
+                        message: "invalid phone number"
+                      },
+                    })}
                   />
-
+                  {renderErrorText(errors.phone_number)}
                 </div>
               </div>
 
@@ -216,17 +266,21 @@ function Landing() {
                   className="form-control-contact-text"
                   id="message"
                   name="message"
+                  ref={register({
+                    required: true,
+                  })}
                 />
-
+                {renderErrorText(errors.message)}
               </div>
             </div>
           </div>
           <div className="col-md-6 submit-contact-div">
             <button type="submit" className="contact-submit" >
-              Send Message
+            <span><Spinner visible={isLoadingSpinner} className="mr-2" /> Send Message </span>
             </button>
           </div>
         </form>
+        <ToastContainer />
       </section>
       <section className="row d-none d-sm-flex partners d-none">
         <div className="how"><h1 className="h1">Our Partners</h1></div>
