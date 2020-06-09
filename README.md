@@ -82,12 +82,10 @@ The WasteCoin solution is not just one feasible solution but also inclusive, saf
 ## WEBSITE
 [wastecoin](https://waste1234.herokuapp.com)
 
-### Please Note: 
+# Please Note 
 1.  When you register, your phone number would be verified as verification code would be sent to that dphone number. Thus  input the right phone number.
-
-2.  This only works for Nigerian Phone numbers for now
-
-3.  To test the REDEEM COIN functionality, you would need to be credited by our Agents. You can reach out to us via wastecoinng@gmail.com to credit you with some coins. So you can attempt to redeem some or all your coins.
+2.  This only works for Nigerian Phone numbers for now.
+3.  To test the REDEEM COIN functionality, you would need to be credited by our Agents. You can reach out to us via the contact form on our website to credit you with some coins. So you can attempt to redeem some or all your coins.
 
 ## SETUP
 You should have **Python 3.5+** and **git** installed. 
