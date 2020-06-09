@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import wasteCoinSys from "../../images/waste_coin_sys.svg";
 import redeemCoins from "../../images/redeem_coins.svg";
 import "./wallet.css";
-import Pagination from "../../components/Pagination";
 import RedeemCoinModal from "../../components/RedeemCoinModal";
 import AllocateCoinModal from "../../components/AllocateCoinModal";
 import { fetchWallet } from "../../redux/reducers/wallet";

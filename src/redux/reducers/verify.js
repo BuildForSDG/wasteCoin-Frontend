@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-import { RESET_PASSWORD, RECEIVE_PASSWORD_RESET_CODE, RESEND_USER_OTP, VERIFY_REGISTERED_USER, PAGE_LOADING, PAGE_LOADED } from "./constant";
+import { CONTACT_US, RESET_PASSWORD, RECEIVE_PASSWORD_RESET_CODE, RESEND_USER_OTP, VERIFY_REGISTERED_USER, PAGE_LOADING, PAGE_LOADED } from "./constant";
 import { isLoading, isLoaded } from "../util";
 
 const verifyUserAsync = (response) => ({
@@ -21,6 +21,11 @@ const sendResetCodeAsync = (response) => ({
 
 const resetPasswordAsync = (response) => ({
   type: RESET_PASSWORD,
+  payload: response
+});
+
+const contactUsAsync = (response) => ({
+  type: CONTACT_US,
   payload: response
 });
 
@@ -97,6 +102,23 @@ export const resetPassword = (userDetails, history) => async (dispatch) => {
   
 };
 
+export const contactUs = (userDetails) => async (dispatch) => {
+  dispatch(isLoading());
+
+  const res = await axios
+    .post(`${process.env.REACT_APP_BACKEND_API_URL}/contact_us`, userDetails);
+
+  dispatch(isLoaded());
+
+  if (res.data.error !== "0") {
+    return toast.error(res.data.message);
+  }
+
+  dispatch(contactUsAsync(res.data));
+  return toast.success(res.data.message);
+  
+};
+
 
 
 function VerifyState(state = {isLoading: false}, action) {
@@ -111,6 +133,11 @@ function VerifyState(state = {isLoading: false}, action) {
         ...state,
         ...action.payload
       };
+    case CONTACT_US:
+        return {
+          ...state,
+          ...action.payload
+        };
     case PAGE_LOADING:
         return {
           ...state,

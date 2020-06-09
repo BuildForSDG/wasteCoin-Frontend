@@ -120,6 +120,11 @@ body {
   align-items: right;
 }
 
+.contact-submit > span {
+  display: flex;
+  justify-content: center;
+}
+
 .contact_form {
   height: 400px;
 }
