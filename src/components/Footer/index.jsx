@@ -15,7 +15,7 @@ const Footer = () => (
 
     <div className="col-sm-6 mb-3 col-md-4 footer__contact">
       <h2>Contact</h2>
-      <p>hello@wastecoinwallet.com</p>
+      <p>info@wastecoin.co</p>
       <Link to="/faq"><p>FAQ</p></Link>
       
     </div>

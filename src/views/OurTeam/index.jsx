@@ -3,6 +3,9 @@ import "./App.css";
 import MohammedYayandi from "../../images/yayandi.jpg";
 import MohammedZubairu from "../../images/Zubairu.jpg";
 import AminuIsrael from "../../images/aminu.jpg";
+import TopeAlbert from "../../images/albert.jpeg";
+import ChidozieManagwu from "../../images/chizodie.jpeg";
+import DanielOlagunju from "../../images/option2.png";
 
 function OurTeam(props) {
   const [selectTeam, setSelectTeam] = useState("aminu");
@@ -48,13 +51,13 @@ function OurTeam(props) {
 
                       <li className={`${selectTeam === "tope" ? "active" : ""} wow zoomIn`} data-wow-duration="1s" data-wow-delay=".3s"  onClick={() => changeProfile("tope")}>
                         <a href="#team-1" data-team="team-1">
-                          <figure><img src="http://www.webcoderskull.com/img/team2.png" alt="Olarewaju Temitope"></img></figure>
+                          <figure><img src={TopeAlbert} alt="Olarewaju Temitope"></img></figure>
                         </a>
                       </li>
 
                       <li className={`${selectTeam === "chidozie" ? "active" : ""} wow zoomIn`} data-wow-duration="1s" data-wow-delay=".5s"  onClick={() => changeProfile("chidozie")}>
                         <a href="#team-1" data-team="team-1">
-                          <figure><img src="http://www.webcoderskull.com/img/team3.png" alt="Chidozie Managwu"></img></figure>
+                          <figure><img src={ChidozieManagwu} alt="Chidozie Managwu"></img></figure>
                         </a>
                       </li>
 
@@ -72,15 +75,15 @@ function OurTeam(props) {
 
                       <li className={`${selectTeam === "daniel" ? "active" : ""} wow zoomIn`} data-wow-duration="1s" data-wow-delay="1.1s"  onClick={() => changeProfile("daniel")}>
                         <a href="#team-1" data-team="team-1">
-                          <figure><img src="http://www.webcoderskull.com/img/team2.png" alt="Olagunju Daniel"></img></figure>
+                          <figure><img src={DanielOlagunju} alt="Olagunju Daniel"></img></figure>
                         </a>
                       </li>
 
-                      <li className={`${selectTeam === "kamau" ? "active" : ""} wow zoomIn`} data-wow-duration="1s" data-wow-delay="1.3s"  onClick={() => changeProfile("kamau")}>
+                      {/* <li className={`${selectTeam === "kamau" ? "active" : ""} wow zoomIn`} data-wow-duration="1s" data-wow-delay="1.3s"  onClick={() => changeProfile("kamau")}>
                         <a href="#team-1" data-team="team-1">
                           <figure><img src="http://www.webcoderskull.com/img/team3.png" alt="Stephen Kamau"></img></figure>
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -105,7 +108,7 @@ function OurTeam(props) {
 
                   <div id="team-2" className={`team-single ${selectTeam === "tope" ? "active" : ""}`}>
                     <div className="team-img">
-                      <img src="http://www.webcoderskull.com/img/team2.png" alt=""></img>
+                      <img src={TopeAlbert} alt=""></img>
                       <div className="team-social">
                         <ul>
                           <li><a href="http://www.github.com/albert85/" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
@@ -122,7 +125,7 @@ function OurTeam(props) {
                   </div>
                   <div id="team-3" className={`team-single ${selectTeam === "chidozie" ? "active" : ""}`}>
                     <div className="team-img">
-                      <img src="http://www.webcoderskull.com/img/team3.png" alt=""></img>
+                      <img src={ChidozieManagwu} alt=""></img>
                       <div className="team-social">
                         <ul>
                           <li><a href="http://www.github.com/chidoziemanagwu/" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
@@ -175,7 +178,7 @@ function OurTeam(props) {
 
                   <div id="team-6" className={`team-single ${selectTeam === "daniel" ? "active" : ""}`}>
                     <div className="team-img">
-                      <img src="http://www.webcoderskull.com/img/team2.png" alt=""></img>
+                      <img src={DanielOlagunju} alt=""></img>
                       <div className="team-social">
                         <ul>
                           <li><a href="http://www.github.com/todak2000/" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
@@ -191,7 +194,7 @@ function OurTeam(props) {
                     </div>
                   </div>
 
-                  <div id="team-7" className={`team-single ${selectTeam === "kamau" ? "active" : ""}`}>
+                  {/* <div id="team-7" className={`team-single ${selectTeam === "kamau" ? "active" : ""}`}>
                     <div className="team-img">
                       <img src="http://www.webcoderskull.com/img/team3.png" alt=""></img>
                       <div className="team-social">
@@ -207,7 +210,7 @@ function OurTeam(props) {
                       <h4>Stephen Kamau</h4>
                       <p>Mentor</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
