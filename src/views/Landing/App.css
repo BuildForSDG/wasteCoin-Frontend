@@ -2,7 +2,12 @@
   height: 500px;
   display: flex;
 }
-
+.logo{
+  width:50px;
+}
+.mobile-logo{
+  width:80px;
+}
 body {
   overflow-x: hidden;
 }
