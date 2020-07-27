@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
 
-import wasteLogo from "../../images/waste_coin_logo.svg";
+import wasteLogo from "../../images/waste_coin_logo1.png";
 import backButton from "../../images/Chevron.svg";
 import { Link } from "react-router-dom";
 import "./signUp.css";
@@ -46,8 +46,8 @@ function RegistrationPage(props) {
 
   return (
     <div className="login-card">
-      <div className="reg-header text-center"> <Link to="/"><img src={backButton} className="back-button mobile-logo float-left" alt="logo" /></Link>Register</div>
-      <div className="mobile-logo-div"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
+      <div className="reg-header text-center"> <Link to="/"><img src={backButton} className="back-button  float-left" alt="logo" /></Link>Register</div>
+      <div className="mobile-logo-div"><img src={wasteLogo} className="logo " alt="logo" /></div>
       <form className="form-control reg-form" onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
           <div className="col-md-6">

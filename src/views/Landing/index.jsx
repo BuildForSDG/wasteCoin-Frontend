@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 import "./App.css";
 import wasteCoinWallet from "../../images/waste_coin_wallet.svg";
 import wastePoint from "../../images/waste_point.svg";
-import wasteLogo from "../../images/waste_coin_logo.svg";
+import wasteLogo from "../../images/waste_coin_logo1.png";
 import goingGreen from "../../images/goinggreen.svg";
 import facebook from "../../images/facebook.svg";
 import andela from "../../images/andela.svg";
@@ -56,7 +56,7 @@ function Landing() {
     <div className="landing_page">
       <section className="row section_styling">
         <div className="col-xs-12 col-xl-5 landing_page__create_account">
-          <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
+          <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="mobile-logo" alt="logo" /></div>
           <div className="desktop">
             <h1>Join the Waste Revolution</h1>
             <h3>At Wastecoin, we believe proper waste <br />
@@ -67,7 +67,7 @@ function Landing() {
           <div className="mobile">
             <h1>Hey there!</h1>
             <h3>Get rewards for disposing waste <br />Properly</h3>
-            <br /><br /><p>Join us, its Free</p>
+            <br /><br /><p>Join WasteCoin, its Free</p>
           </div>
           <Link to="/registration" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</Link>
         </div>
@@ -78,7 +78,7 @@ function Landing() {
           <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
           <p><Link to="/registration">Create an account</Link></p>
           <br></br>
-          <a className="nav-link text-center" href="https://s3.amazonaws.com/gonativeio/static/5edbc58d67540a290b490255/app-release.apk"><img src={googleLogo} className="logo" alt="logo" /> <span className="sr-only">(current)</span></a>
+          <a className="nav-link text-center" href="https://play.google.com/store/apps/details?id=com.buildforsdg.wastecoin&hl=en"><img src={googleLogo} alt="logo" /> <span className="sr-only">(current)</span></a>
         </div>
 
       </section>

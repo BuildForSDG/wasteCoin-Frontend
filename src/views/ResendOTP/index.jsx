@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
 
-import wasteLogo from "../../images/waste_coin_logo.svg";
+import wasteLogo from "../../images/waste_coin_logo1.png";
 import backButton from "../../images/Chevron.svg";
 import "./verify.css";
 import { resendOtp } from "../../redux/reducers/verify";
@@ -33,8 +33,8 @@ function VerifyCode(props) {
 
   return (
     <div className="login-card">
-      <div className="reg-header text-center"> <Link to="/"><img src={backButton} className="back-button mobile-logo float-left" alt="logo" /></Link>Resend OTP</div>
-      <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo mobile-logo" alt="logo" /></div>
+      <div className="reg-header text-center"> <Link to="/"><img src={backButton} className="back-button float-left" alt="logo" /></Link>Resend OTP</div>
+      <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="logo" alt="logo" /></div>
 
       <form className="form-control reg-form btn_width" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
