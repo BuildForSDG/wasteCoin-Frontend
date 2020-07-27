@@ -59,7 +59,7 @@ function Landing() {
           <div className="mobile-logo-div mb-5"><img src={wasteLogo} className="mobile-logo" alt="logo" /></div>
           <div className="desktop">
             <h1>Join the Waste Revolution</h1>
-            <h3>At Wastecoin, we believe proper waste <br />
+            <h3>At WasteCoin, we believe proper waste <br />
             collection, disposal is possible and <br />
               <span>EVERYONE'S RESPONSIBILITY</span>
             </h3>
@@ -69,7 +69,7 @@ function Landing() {
             <h3>Get rewards for disposing waste <br />Properly</h3>
             <br /><br /><p>Join WasteCoin, its Free</p>
           </div>
-          <Link to="/registration" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</Link>
+          <a href="https://play.google.com/store/apps/details?id=com.buildforsdg.wastecoin&hl=en" className="btn btn-block d-none d-sm-block landing_page__create_account__btn">Create Account</a>
         </div>
         <div className="d-none col-xlg-7 d-xl-block landing_page__waste">
           <img src={imageTop} alt="image_top_img" />
@@ -159,17 +159,17 @@ function Landing() {
               <img src={deliver} alt="deliver_img" />
             </div>
             <div className="d-none col-xlg-5 d-xl-block word_left">
-              <h1 className="h1">Deliever to a Wastecoin Agent</h1>
-              <h3 className="h3"> Our Agents are around you. Deliever to them<br />
+              <h1 className="h1">Deliver to a WasteCoin Agent</h1>
+              <h3 className="h3"> Our Agents are around you. Deliver to them<br />
                 You can go to them or they can come to you</h3>
             </div>
           </div>
           <div className="row paid">
             <div className="d-none col-xlg-5 d-xl-block word_left">
-              <h1 className="h1">Get paid in Wastecoin</h1>
-              <h3 className="h3">Our agents weights the Waste you deliever and<br />
-                pay you the equivalent amount in Wastecoin.
-                <br />This is paid into your Wastecoin wallet</h3>
+              <h1 className="h1">Get paid in WasteCoin</h1>
+              <h3 className="h3">Our agents weights the Waste you deliver and<br />
+                pay you the equivalent amount in WasteCoin.
+                <br />This is paid into your WasteCoin wallet</h3>
             </div>
             <div className="d-none col-xlg-7 d-xl-block image_right">
               <img src={paid} alt="paid_img" />
@@ -185,7 +185,7 @@ function Landing() {
                 accumulate it and let your wastecoin grow significantly
                 <br /> as you would keep your money in a bank.<br />
                 OR
-                <br /> Redeem the Wastecoins in exchange for rewards such as
+                <br /> Redeem the WasteCoins in exchange for rewards such as
                 <br /> Cash, Data subscription, Recharge cards amongst other incentives</h3>
             </div>
           </div>

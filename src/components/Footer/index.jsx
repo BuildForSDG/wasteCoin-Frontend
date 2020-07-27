@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="col-sm-6 col-md-4 mb-3 footer__about">
       <h2>About</h2>
       <ul>
-      <Link to="/ourteam"><li>Our Team</li></Link>
+      {/* <Link to="/ourteam"><li>Our Team</li></Link> */}
       <Link to="/privatepolicy"><li>Privacy Policy</li></Link>
       </ul>
     </div>
@@ -31,7 +31,7 @@ const Footer = () => (
       </div>
 
       <div className="landing_page__copyright">
-        <p>Copyright @ SDG Innovation Team-105</p>
+        <p>Copyright @ WasteCoin Nigeria</p>
       </div>
     </div>
   </div>
