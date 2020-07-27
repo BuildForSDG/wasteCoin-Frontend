@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
@@ -20,7 +20,7 @@ import getRewarded from "../../images/get_rewarded.svg";
 import imageTop from "../../images/top_image_landing.svg";
 import whyReward from "../../images/why01.svg";
 import whyFuture from "../../images/why02.svg";
-import forwardArrow from "../../images/arrow_forward.svg";
+// import forwardArrow from "../../images/arrow_forward.svg";
 import googleLogo from "../../images/googlestore.svg";
 import { contactUs } from "../../redux/reducers/verify";
 import Spinner from "../../components/Loader";
@@ -75,8 +75,8 @@ function Landing() {
           <img src={imageTop} alt="image_top_img" />
         </div>
         <div className="d-block d-sm-none landing_page__create_account__mobile">
-          <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
-          <p><Link to="/registration">Create an account</Link></p>
+          {/* <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
+          <p><Link to="/registration">Create an account</Link></p> */}
           <br></br>
           <a className="nav-link text-center" href="https://play.google.com/store/apps/details?id=com.buildforsdg.wastecoin&hl=en"><img src={googleLogo} alt="logo" /> <span className="sr-only">(current)</span></a>
         </div>
