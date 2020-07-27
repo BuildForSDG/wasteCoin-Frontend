@@ -78,7 +78,7 @@ function Landing() {
           <Link to="/login"><button className="btn btn-primary">Sign in <span><img src={forwardArrow} alt="arrow_forward" /></span></button></Link>
           <p><Link to="/registration">Create an account</Link></p>
           <br></br>
-          <a className="nav-link text-center" href="https://s3.amazonaws.com/gonativeio/static/5edbc58d67540a290b490255/app-release.apk"><img src={googleLogo} className="logo" alt="logo" /> <span className="sr-only">(current)</span></a>
+          <a className="nav-link text-center" href="https://play.google.com/store/apps/details?id=com.buildforsdg.wastecoin&hl=en"><img src={googleLogo} alt="logo" /> <span className="sr-only">(current)</span></a>
         </div>
 
       </section>

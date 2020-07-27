@@ -2,11 +2,14 @@
   height: 500px;
   display: flex;
 }
-.logo{
-  width:50px;
+.logo {
+  width: 50px;
 }
-.mobile-logo{
-  width:80px;
+.mobile-logo {
+  width: 80px;
+}
+.mobile-logo-div {
+  text-align: center;
 }
 body {
   overflow-x: hidden;
