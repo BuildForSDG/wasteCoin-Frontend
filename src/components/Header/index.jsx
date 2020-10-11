@@ -18,12 +18,12 @@ function Header() {
           <li className="nav-item">
             <a className="nav-link" href="/#how_it_works"> How it works</a>
           </li>
-          {/* <li className="nav-item">
+          <li className="nav-item">
             <Link to="/registration" className="nav-link">Register</Link>
-          </li> */}
-          {/* <li className="nav-item">
+          </li> 
+          <li className="nav-item">
             <Link to="/login" className="nav-link">Login</Link>
-          </li> */}
+          </li> 
           <li className="nav-item">
             <a className="nav-link" href="/#contact_us">Contact Us</a>
           </li>
