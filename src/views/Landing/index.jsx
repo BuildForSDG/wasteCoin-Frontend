@@ -283,8 +283,9 @@ function Landing() {
         <ToastContainer />
       </section>
       <section className="row d-none d-sm-flex partners d-none">
-        <div className="how"><h1 className="h1">Our Partners</h1></div>
-        <div className="row partner_column">
+        <h3 className="h3">This project was built by participants of the Facebook Developer Circles and Andela Learning Community #BuildforSDG Challenge 2020 </h3>
+<!--         <div className="how"><h1 className="h1">Our Partners</h1></div> -->
+<!--         <div className="row partner_column">
           <div className="col-md-3">
             <img src={facebook} alt="facebook_img" />
           </div>
@@ -297,7 +298,7 @@ function Landing() {
           <div className="col-md-3">
             <img src={wastePoint} alt="wastepoint_img" />
           </div>
-        </div>
+        </div> -->
       </section>
     </div>
   );
