@@ -283,7 +283,7 @@ function Landing() {
         <ToastContainer />
       </section>
       <section className="row d-none d-sm-flex partners d-none">
-        <h3 className="h3">This project was built by participants of the Facebook Developer Circles and Andela Learning Community #BuildforSDG Challenge 2020 </h3>
+        <h3 className="h3 how">This project was built by participants of the Facebook Developer Circles and Andela Learning Community #BuildforSDG Challenge 2020 </h3>
       </section>
     </div>
   );
